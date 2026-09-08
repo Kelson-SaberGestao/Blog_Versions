@@ -57,10 +57,10 @@
     align-items: center; height: 88px; gap: 20px 32px;
   }
   .brand { grid-area: brand; display: flex; align-items: center; gap: 11px; flex: none; min-width: 0; }
-  .brand-logo { height: 32px; width: auto; display: block; flex: none; }
+  .brand-logo { height: 44px; width: auto; display: block; flex: none; }
   .brand-name { display: flex; flex-direction: column; line-height: 1.2; }
-  .brand-name b { font-family: var(--font-display); font-weight: 900; font-size: 17px; color: var(--blue-700); }
-  .brand-thin { font-family: var(--font-display); font-weight: 500; font-size: 15px; color: var(--blue-700); }
+  .brand-name b { font-family: var(--font-display); font-weight: 900; font-size: 22px; color: var(--blue-700); }
+  .brand-thin { font-family: var(--font-display); font-weight: 500; font-size: 19px; color: var(--blue-700); }
   .brand-divider { width: 1px; align-self: stretch; margin: 6px 2px; background: var(--border); flex: none; }
 
   .header-search-lg {
@@ -315,6 +315,7 @@
     display: flex; flex-direction: column;
   }
   .card:hover { transform: translateY(-3px); box-shadow: var(--shadow-md); }
+  .card:hover h3 { color: var(--blue-700); }
   .card:hover .card-body { background: var(--blue-050); }
 
   .art {
@@ -352,7 +353,7 @@
   /* ---------- section heads ---------- */
   .section { padding: 52px 0; }
   .section-head { display: flex; align-items: baseline; justify-content: space-between; margin-bottom: 26px; gap: 20px;}
-  .section-head h2 { font-size: 26px; font-weight: 700; }
+  .section-head h2 { font-size: 26px; font-weight: 700; color: var(--blue-700); }
   .see-all { font-family: var(--font-ui); font-weight: 800; font-size: 13.5px; color: var(--blue-700); display: flex; align-items: center; gap: 6px; }
   .see-all svg { width: 12px; height: 12px; }
 
@@ -501,7 +502,7 @@
     .header-social { display: none; }
     .hamburger-btn { display: flex; }
     .brand > .brand-divider { display: none; }
-    .brand-thin, .brand-name b { font-size: 14px; }
+    .brand-thin, .brand-name b { font-size: 17px; }
 
     /* desktop secondary nav row (dropdowns) is replaced by the slide-in menu */
     nav.primary-row { display: none; }
@@ -532,7 +533,7 @@
     .banner-frame { height: 200px; }
     .topic-mini-grid .mini-post { flex-basis: 84%; }
     .foot-grid { grid-template-columns: 1fr; }
-    .brand-thin, .brand-name b { font-size: 13px; }
+    .brand-thin, .brand-name b { font-size: 15px; }
     .banner-copy h3 { font-size: 19px; }
     .banner-copy p { font-size: 13.5px; }
   }
@@ -610,7 +611,7 @@
   .post-body { font-size: 17px; line-height: 1.75; color: var(--ink-soft); }
   .post-body p { margin: 0 0 22px; }
   .post-body h2 {
-    font-family: var(--font-display); font-weight: 800; font-size: 26px; color: var(--ink);
+    font-family: var(--font-display); font-weight: 800; font-size: 26px; color: var(--blue-700);
     margin: 44px 0 18px; text-wrap: balance;
   }
   .post-body h3 { font-family: var(--font-display); font-weight: 700; font-size: 20px; color: var(--ink); margin: 32px 0 14px; }
@@ -710,7 +711,7 @@
   .related-posts { max-width: 1180px; margin: 0 auto; padding: 0 28px 60px; }
 
   .comments-section { max-width: 760px; margin: 0 auto; padding: 0 0 80px; }
-  .comments-section > h2 { font-family: var(--font-display); font-size: 22px; color: var(--ink); margin-bottom: 24px; }
+  .comments-section > h2 { font-family: var(--font-display); font-size: 22px; color: var(--blue-700); margin-bottom: 24px; }
   .comment-list { display: flex; flex-direction: column; gap: 22px; margin-bottom: 32px; }
   .comment { display: flex; gap: 14px; }
   .comment-body { flex: 1; min-width: 0; }
