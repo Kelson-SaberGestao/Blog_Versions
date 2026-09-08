@@ -64,6 +64,7 @@
   .brand-divider { width: 1px; align-self: stretch; margin: 6px 2px; background: var(--border); flex: none; }
 
   .header-search-lg {
+    position: relative;
     grid-area: search; justify-self: center; width: 100%; max-width: 720px;
     display: flex; align-items: center; gap: 12px; min-width: 0;
     background: transparent;
@@ -119,11 +120,42 @@
     display: flex; align-items: center; justify-content: center; color: var(--ink-soft);
   }
   .mobile-search {
+    position: relative;
     display: flex; align-items: center; gap: 10px;
     border: 1px solid var(--border); border-radius: 999px; padding: 12px 16px; margin: 14px 0 6px;
   }
   .mobile-search svg { width: 17px; height: 17px; color: var(--blue-700); flex: none; }
   .mobile-search input { flex: 1; min-width: 0; border: 0; background: transparent; outline: 0; color: var(--ink); font-family: var(--font-body); font-size: 14.5px; }
+
+  /* ---------- search results dropdown ---------- */
+  .search-dropdown {
+    position: absolute; top: calc(100% + 10px); left: 0; right: 0;
+    background: var(--surface); border: 1px solid var(--border); border-radius: 14px;
+    box-shadow: var(--shadow-lg); padding: 8px;
+    opacity: 0; visibility: hidden; transform: translateY(4px);
+    transition: opacity .15s ease, transform .15s ease;
+    z-index: 60;
+  }
+  .search-dropdown.open { opacity: 1; visibility: visible; transform: translateY(0); }
+  .search-result { display: flex; align-items: center; gap: 12px; padding: 9px 10px; border-radius: 10px; }
+  .search-result:hover { background: var(--blue-050); }
+  .search-result-thumb { width: 46px; height: 34px; border-radius: 6px; flex: none; background-size: cover; background-position: center; }
+  .search-result-text { display: flex; flex-direction: column; gap: 2px; min-width: 0; }
+  .search-result-text b {
+    font-family: var(--font-display); font-weight: 700; font-size: 13.5px; color: var(--ink);
+    white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+  }
+  .search-result-text span { font-family: var(--font-ui); font-size: 11.5px; color: var(--muted); }
+  .search-empty { padding: 16px 10px; font-size: 13px; color: var(--muted); text-align: center; }
+  .search-all {
+    display: flex; align-items: center; justify-content: center; gap: 6px;
+    padding: 11px 10px; margin-top: 4px; border-top: 1px solid var(--border);
+    font-family: var(--font-ui); font-weight: 800; font-size: 12.5px; color: var(--blue-700);
+    border-radius: 0 0 8px 8px;
+  }
+  .search-all svg { width: 10px; height: 10px; }
+  .search-all:hover { background: var(--blue-050); }
+
   .mobile-qa-link {
     display: block;
     background: var(--blue-050); border-radius: 12px; padding: 13px 16px; margin-bottom: 10px;
@@ -732,9 +764,22 @@
       <div class="brand-divider"></div>
       <div class="brand-name"><span class="brand-thin">Quality</span><b style="font-size:17px;">Blog</b></div>
     </a>
-    <form class="header-search-lg" onsubmit="return false">
+    <form class="header-search-lg" onsubmit="return false" autocomplete="off">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>
-      <input type="search" placeholder="Search articles, tools, guides…" />
+      <input type="search" id="desktopSearchInput" placeholder="Search articles, tools, guides…" />
+      <div class="search-dropdown" id="desktopSearchDropdown">
+        <div class="search-results">
+          <a class="search-result" href="post.html">
+            <span class="search-result-thumb photo-doc"></span>
+            <span class="search-result-text">
+              <b>ISO 9001 Documented Information: the Complete Guide to Clause 7.5</b>
+              <span>Quality Management Systems</span>
+            </span>
+          </a>
+        </div>
+        <div class="search-empty" hidden>No results found. Try a different search term.</div>
+        <a class="search-all" href="#">Show all results for "<span class="search-query-text"></span>"<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M9 6l6 6-6 6"/></svg></a>
+      </div>
     </form>
     <div class="topbar-actions">
       <div class="header-social">
@@ -822,9 +867,22 @@
     </button>
   </div>
 
-  <form class="mobile-search" onsubmit="return false">
+  <form class="mobile-search" onsubmit="return false" autocomplete="off">
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>
-    <input type="search" placeholder="Search articles, tools, guides…" />
+    <input type="search" id="mobileSearchInput" placeholder="Search articles, tools, guides…" />
+    <div class="search-dropdown" id="mobileSearchDropdown">
+      <div class="search-results">
+        <a class="search-result" href="post.html">
+          <span class="search-result-thumb photo-doc"></span>
+          <span class="search-result-text">
+            <b>ISO 9001 Documented Information: the Complete Guide to Clause 7.5</b>
+            <span>Quality Management Systems</span>
+          </span>
+        </a>
+      </div>
+      <div class="search-empty" hidden>No results found. Try a different search term.</div>
+      <a class="search-all" href="#">Show all results for "<span class="search-query-text"></span>"<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M9 6l6 6-6 6"/></svg></a>
+    </div>
   </form>
 
   <a class="mobile-qa-link" href="#">
@@ -1195,4 +1253,49 @@ function scrollToTop() {
   }, { passive: true });
 })();
 
+
+(function () {
+  var KEYWORDS = ['iso', '9001', 'iso 9001', 'document', 'documented', 'documentation',
+    'clause', '7.5', 'audit', 'qms', 'quality management', 'retention', 'records', 'information'];
+
+  function isMatch(query) {
+    var q = query.toLowerCase();
+    return KEYWORDS.some(function (k) { return k.indexOf(q) !== -1 || q.indexOf(k) !== -1; });
+  }
+
+  function wireSearch(formEl, dropdownEl) {
+    if (!formEl || !dropdownEl) return;
+    var input = formEl.querySelector('input');
+    var resultsEl = dropdownEl.querySelector('.search-results');
+    var emptyEl = dropdownEl.querySelector('.search-empty');
+    var queryEls = dropdownEl.querySelectorAll('.search-query-text');
+
+    function update() {
+      var q = input.value.trim();
+      if (!q) {
+        dropdownEl.classList.remove('open');
+        return;
+      }
+      var hit = isMatch(q);
+      resultsEl.hidden = !hit;
+      emptyEl.hidden = hit;
+      for (var i = 0; i < queryEls.length; i++) queryEls[i].textContent = q;
+      dropdownEl.classList.add('open');
+    }
+
+    input.addEventListener('input', update);
+    input.addEventListener('focus', function () { if (input.value.trim()) update(); });
+    document.addEventListener('click', function (e) {
+      if (!formEl.contains(e.target)) dropdownEl.classList.remove('open');
+    });
+    formEl.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape') dropdownEl.classList.remove('open');
+    });
+  }
+
+  wireSearch(document.getElementById('desktopSearchInput') && document.getElementById('desktopSearchInput').closest('form'),
+    document.getElementById('desktopSearchDropdown'));
+  wireSearch(document.getElementById('mobileSearchInput') && document.getElementById('mobileSearchInput').closest('form'),
+    document.getElementById('mobileSearchDropdown'));
+})();
 </script>
