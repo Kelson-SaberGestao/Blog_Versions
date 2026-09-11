@@ -983,3 +983,33 @@ Text Domain: quality-blog
   position: static; opacity: 1; visibility: visible; transform: none;
   box-shadow: none; border: 0; padding: 2px 0 10px 14px; min-width: 0;
 }
+
+/* ---------- rodape: partes que o prototipo tinha com estilo inline ---------- */
+.foot-brand .brand { display: flex; align-items: center; gap: 9px; }
+.foot-brand .brand-logo { height: 30px; width: auto; }
+.foot-brand .brand-divider { width: 1px; align-self: stretch; margin: 3px 1px; background: var(--border); flex: none; }
+.foot-brand .brand-name { display: flex; flex-direction: column; line-height: 1.15; }
+.foot-brand .brand-thin { font-size: 15px; }
+.foot-brand .brand-name b { font-size: 17px; }
+
+.foot-newsletter { display: flex; gap: 8px; }
+.foot-newsletter input {
+  flex: 1; min-width: 0; padding: 10px 12px; border-radius: 9px;
+  border: 1px solid var(--border); background: var(--surface); color: var(--ink);
+  font-family: var(--font-body); font-size: 13px; outline: 0;
+  transition: border-color .15s ease;
+}
+.foot-newsletter input:focus { border-color: var(--blue-700); }
+.foot-newsletter button {
+  flex: none; cursor: pointer; border: 0; border-radius: 9px; padding: 10px 14px;
+  background: var(--blue-700); color: #fff;
+  font-family: var(--font-ui); font-weight: 800; font-size: 13px;
+  transition: background .15s ease;
+}
+.foot-newsletter button:hover { background: var(--blue-600); }
+.foot-newsletter-todo { font-size: 12.5px; color: var(--muted); margin: 0; font-style: italic; }
+
+.foot-legal { display: flex; flex-wrap: wrap; gap: 6px 14px; align-items: center; }
+.foot-legal li { list-style: none; }
+.foot-legal a { color: var(--muted); }
+.foot-legal a:hover { color: var(--blue-700); }

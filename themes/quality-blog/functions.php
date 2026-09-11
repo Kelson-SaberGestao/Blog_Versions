@@ -31,9 +31,11 @@ function qb_setup() {
 
 	register_nav_menus(
 		array(
-			'primary' => __( 'Menu principal', 'quality-blog' ),
-			'mobile'  => __( 'Menu mobile', 'quality-blog' ),
-			'footer'  => __( 'Rodape', 'quality-blog' ),
+			'primary'          => __( 'Menu principal', 'quality-blog' ),
+			'mobile'           => __( 'Menu mobile', 'quality-blog' ),
+			'footer-resources' => __( 'Rodape - coluna Resources', 'quality-blog' ),
+			'footer-software'  => __( 'Rodape - coluna Software', 'quality-blog' ),
+			'footer-legal'     => __( 'Rodape - linha final (privacidade, cookies)', 'quality-blog' ),
 		)
 	);
 }
@@ -350,8 +352,69 @@ function qb_customize( $wp_customize ) {
 		'qb_banner_enabled',
 		array( 'label' => __( 'Mostrar o banner', 'quality-blog' ), 'section' => 'qb_banner', 'type' => 'checkbox' )
 	);
+
+	/* ---- Rodape e redes ---- */
+
+	$wp_customize->add_section(
+		'qb_footer',
+		array(
+			'title'       => __( 'Rodape e redes', 'quality-blog' ),
+			'priority'    => 31,
+			'description' => __( 'Texto da marca, redes sociais e o botao Subscribe do topo.', 'quality-blog' ),
+		)
+	);
+
+	$footer_fields = array(
+		'qb_footer_text' => array(
+			__( 'Texto abaixo da marca', 'quality-blog' ),
+			'Independent, practical writing on quality management, ISO 9001 and continuous improvement - published by the team behind Qualiex.',
+			'sanitize_textarea_field',
+			'textarea',
+		),
+		'qb_newsletter_text' => array(
+			__( 'Chamada da newsletter', 'quality-blog' ),
+			'One email a week, new articles and free resources.',
+			'sanitize_text_field',
+			'text',
+		),
+		'qb_subscribe_url' => array(
+			__( 'Destino do Subscribe / newsletter', 'quality-blog' ),
+			'',
+			'esc_url_raw',
+			'url',
+		),
+		'qb_social_linkedin'  => array( __( 'LinkedIn', 'quality-blog' ), '', 'esc_url_raw', 'url' ),
+		'qb_social_instagram' => array( __( 'Instagram', 'quality-blog' ), '', 'esc_url_raw', 'url' ),
+		'qb_social_youtube'   => array( __( 'YouTube', 'quality-blog' ), '', 'esc_url_raw', 'url' ),
+	);
+
+	foreach ( $footer_fields as $key => $conf ) {
+		$wp_customize->add_setting( $key, array( 'default' => $conf[1], 'sanitize_callback' => $conf[2] ) );
+		$wp_customize->add_control( $key, array( 'label' => $conf[0], 'section' => 'qb_footer', 'type' => $conf[3] ) );
+	}
 }
 add_action( 'customize_register', 'qb_customize' );
+
+/**
+ * Icones das redes. Uma rede sem URL configurada simplesmente nao aparece,
+ * em vez de virar um link morto para "#".
+ */
+function qb_social_links() {
+	return array(
+		'qb_social_instagram' => array(
+			'Instagram',
+			'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>',
+		),
+		'qb_social_linkedin'  => array(
+			'LinkedIn',
+			'<svg viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5C4.98 4.88 3.87 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5zM.24 8.25h4.5V23H.24V8.25zM8.25 8.25h4.31v2.02h.06c.6-1.14 2.07-2.34 4.26-2.34 4.56 0 5.4 3 5.4 6.9V23h-4.5v-6.6c0-1.57-.03-3.6-2.2-3.6-2.2 0-2.53 1.72-2.53 3.48V23h-4.5V8.25z"/></svg>',
+		),
+		'qb_social_youtube'   => array(
+			'YouTube',
+			'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="1.5" y="5.5" width="21" height="13" rx="4"/><path d="M10 9.2l5 2.8-5 2.8V9.2z" fill="currentColor" stroke="none"/></svg>',
+		),
+	);
+}
 
 /* -------------------------------------------------------------------------
  * Comentarios
