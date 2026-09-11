@@ -102,20 +102,25 @@ function qb_topic_colors() {
 			'philosophy-of-excellence'   => '#B91C1C',
 
 			// Espanhol: mesmas cores, para o par visual sobreviver a traducao.
-			'sistemas-de-gestion-de-calidad' => '#0544AB',
-			'herramientas-de-calidad'        => '#0E8F8F',
-			'mejora-continua'                => '#16A34A',
-			'cultura-organizacional'         => '#C026A3',
-			'gestion-de-proyectos'           => '#7C3AED',
-			'estrategia-de-negocio'          => '#D4841A',
-			'gurus-de-la-calidad'            => '#1E3A8A',
-			'gestion-de-procesos'            => '#0369A1',
-			'filosofia-de-la-excelencia'     => '#B91C1C',
+			// Os slugs abaixo sao os reais do blogdelacalidad.com - varios
+			// terminam em -es por causa da migracao, entao nao da para
+			// derivar do nome.
+			'sistema-de-gestion'         => '#0544AB',
+			'herramientas-de-la-calidad' => '#0E8F8F',
+			'mejora-continua'            => '#16A34A',
+			'cultura-organizacional-es'  => '#C026A3',
+			'gestion-de-procesos'        => '#0369A1',
+			'estrategia-empresarial-es'  => '#D4841A',
+			'clientes-es'                => '#1E3A8A',
+			'columnistas-es'             => '#7C3AED',
+			'ultimas-es'                 => '#B91C1C',
 		)
 	);
 }
 
 function qb_topic_color( $term ) {
+	static $assigned = null;
+
 	$colors = qb_topic_colors();
 	$slug   = is_object( $term ) ? $term->slug : (string) $term;
 
@@ -124,14 +129,45 @@ function qb_topic_color( $term ) {
 	}
 
 	/*
-	 * Categoria fora do mapa - renomeada, nova, ou num idioma que ninguem
-	 * cadastrou aqui. Em vez de devolver sempre o mesmo azul, e transformar
-	 * os blocos por tema num bloco monocromatico so, escolhe uma cor da
-	 * propria paleta de forma estavel: o mesmo slug sempre recebe a mesma cor.
+	 * Categoria fora do mapa - renomeada, nova, ou de um site que ja existia
+	 * com os slugs dele. Em vez de devolver sempre o mesmo azul, distribui as
+	 * cores que sobraram da paleta, uma por categoria.
+	 *
+	 * Um hash simples do slug era mais curto, mas colidia: duas categorias
+	 * caiam na mesma cor e o codigo por cor deixava de distinguir.
 	 */
-	$palette = array_values( array_unique( $colors ) );
+	if ( null === $assigned ) {
+		$assigned = array();
+		$palette  = array_values( array_unique( $colors ) );
+		$slugs    = get_terms(
+			array( 'taxonomy' => 'category', 'hide_empty' => false, 'fields' => 'slugs' )
+		);
+		$slugs    = is_wp_error( $slugs ) ? array() : $slugs;
 
-	return $palette[ abs( crc32( $slug ) ) % count( $palette ) ];
+		// Cores ja tomadas pelas categorias que estao no mapa.
+		$taken = array();
+		foreach ( $slugs as $s ) {
+			if ( isset( $colors[ $s ] ) ) {
+				$taken[] = $colors[ $s ];
+			}
+		}
+
+		$free = array_values( array_diff( $palette, $taken ) );
+		if ( empty( $free ) ) {
+			$free = $palette;
+		}
+
+		$i = 0;
+		foreach ( $slugs as $s ) {
+			if ( isset( $colors[ $s ] ) ) {
+				continue;
+			}
+			$assigned[ $s ] = $free[ $i % count( $free ) ];
+			$i++;
+		}
+	}
+
+	return isset( $assigned[ $slug ] ) ? $assigned[ $slug ] : '#0544AB';
 }
 
 /**

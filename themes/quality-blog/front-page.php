@@ -97,6 +97,8 @@ $qb_terms = get_terms(
 		'orderby'    => 'count',
 		'order'      => 'DESC',
 		'number'     => 9,
+		// "Sem categoria" e o deposito do WordPress, nao um tema editorial.
+		'exclude'    => array( (int) get_option( 'default_category' ) ),
 	)
 );
 
