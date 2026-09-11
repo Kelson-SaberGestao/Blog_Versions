@@ -1,0 +1,9 @@
+# macOS
+.DS_Store
+
+# Configuração local de preview (aponta para caminho de máquina)
+.claude/
+
+# Pacote gerado do tema — reconstruir com:
+#   cd themes && zip -r quality-blog.zip quality-blog
+themes/*.zip
