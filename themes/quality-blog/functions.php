@@ -130,40 +130,48 @@ function qb_topic_color( $term ) {
 
 	/*
 	 * Categoria fora do mapa - renomeada, nova, ou de um site que ja existia
-	 * com os slugs dele. Em vez de devolver sempre o mesmo azul, distribui as
-	 * cores que sobraram da paleta, uma por categoria.
+	 * com os slugs dele. Percorre as categorias na mesma ordem em que a home
+	 * as exibe e da a cada uma a primeira cor da paleta ainda livre.
 	 *
-	 * Um hash simples do slug era mais curto, mas colidia: duas categorias
-	 * caiam na mesma cor e o codigo por cor deixava de distinguir.
+	 * Antes isto reservava so as cores nao usadas pelas categorias mapeadas,
+	 * e quando sobrava uma cor so, todas as categorias fora do mapa caiam
+	 * nela - era como "Sem categoria" e "Mejora Continua" saiam iguais.
 	 */
 	if ( null === $assigned ) {
 		$assigned = array();
 		$palette  = array_values( array_unique( $colors ) );
-		$slugs    = get_terms(
-			array( 'taxonomy' => 'category', 'hide_empty' => false, 'fields' => 'slugs' )
-		);
-		$slugs    = is_wp_error( $slugs ) ? array() : $slugs;
 
-		// Cores ja tomadas pelas categorias que estao no mapa.
-		$taken = array();
-		foreach ( $slugs as $s ) {
-			if ( isset( $colors[ $s ] ) ) {
-				$taken[] = $colors[ $s ];
+		$terms = get_terms(
+			array(
+				'taxonomy'   => 'category',
+				'hide_empty' => false,
+				'orderby'    => 'count',
+				'order'      => 'DESC',
+			)
+		);
+		$terms = is_wp_error( $terms ) ? array() : $terms;
+
+		$used = array();
+		foreach ( $terms as $t ) {
+			if ( isset( $colors[ $t->slug ] ) ) {
+				$used[] = $colors[ $t->slug ];
 			}
 		}
 
-		$free = array_values( array_diff( $palette, $taken ) );
-		if ( empty( $free ) ) {
-			$free = $palette;
-		}
-
-		$i = 0;
-		foreach ( $slugs as $s ) {
-			if ( isset( $colors[ $s ] ) ) {
+		foreach ( $terms as $t ) {
+			if ( isset( $colors[ $t->slug ] ) ) {
 				continue;
 			}
-			$assigned[ $s ] = $free[ $i % count( $free ) ];
-			$i++;
+
+			$free = array_values( array_diff( $palette, $used ) );
+			if ( empty( $free ) ) {
+				// Mais categorias que cores: recomeca a paleta.
+				$used = array();
+				$free = $palette;
+			}
+
+			$assigned[ $t->slug ] = $free[0];
+			$used[]               = $free[0];
 		}
 	}
 

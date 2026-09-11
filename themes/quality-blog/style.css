@@ -54,7 +54,12 @@ Text Domain: quality-blog
   img, svg { max-width: 100%; }
   a { color: inherit; text-decoration: none; }
   h1, h2, h3 { font-family: var(--font-display); color: var(--ink); text-wrap: balance; margin: 0; }
-  .wrap { max-width: 1180px; margin: 0 auto; padding: 0 28px; }
+  /* Acompanha a largura da janela ate 1500px. Nao e px fixo: abaixo disso o
+   conteudo ocupa a tela toda menos o respiro das bordas. O teto existe porque
+   card e linha de texto tem tamanho confortavel - passando disso, nao fica
+   melhor, fica grande. Em tela muito larga a gente ganha espaco mostrando
+   mais colunas, la embaixo, em vez de esticar o que ja tem. */
+  .wrap { max-width: 1500px; margin: 0 auto; padding: 0 28px; }
 
   /* ---------- header: top bar (logo / search / social) ---------- */
   header.main { border-bottom: 1px solid var(--border); background: var(--surface); }
@@ -393,7 +398,7 @@ Text Domain: quality-blog
     content: ""; position: absolute; inset: 0; z-index: 0; pointer-events: none;
     background: radial-gradient(55% 160% at 100% 50%, color-mix(in srgb, var(--blue-700) 22%, transparent), transparent 65%);
   }
-  .wrap.nav-row-2 { max-width: 1280px; padding: 0 28px; }
+  .wrap.nav-row-2 { max-width: 1500px; padding: 0 28px; }
   .nav-row-2 { position: relative; z-index: 1; display: flex; align-items: center; gap: 18px; height: 68px; }
   .nav-row-2 > .nav-links { flex: 1; justify-content: center; }
   .nav-item { position: relative; flex: none; }
