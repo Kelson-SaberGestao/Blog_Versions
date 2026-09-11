@@ -39,9 +39,17 @@ if ( ! defined( 'ABSPATH' ) ) {
 				<?php get_search_form(); ?>
 
 				<?php
-				$qb_subscribe = get_theme_mod( 'qb_subscribe_url', '#' );
+				/*
+				 * Sem destino configurado o botao nao aparece, em vez de virar
+				 * um link para "#" que nao leva a lugar nenhum - mesma regra
+				 * dos icones de rede no rodape. Para tirar o botao, basta
+				 * limpar o campo em Personalizar > Rodape e redes.
+				 */
+				$qb_subscribe = get_theme_mod( 'qb_subscribe_url', '' );
 				?>
-				<a class="subscribe-btn" href="<?php echo esc_url( $qb_subscribe ); ?>"><?php esc_html_e( 'Subscribe', 'quality-blog' ); ?></a>
+				<?php if ( $qb_subscribe ) : ?>
+					<a class="subscribe-btn" href="<?php echo esc_url( $qb_subscribe ); ?>"><?php esc_html_e( 'Subscribe', 'quality-blog' ); ?></a>
+				<?php endif; ?>
 
 				<button class="hamburger-btn" id="hamburgerBtn" type="button"
 					aria-label="<?php esc_attr_e( 'Open menu', 'quality-blog' ); ?>"
