@@ -429,12 +429,27 @@ Text Domain: quality-blog
     box-shadow: var(--shadow-lg);
     padding: 10px;
     max-width: min(90vw, 480px);
-    opacity: 0; visibility: hidden; pointer-events: none;
-    transition: opacity .15s ease, transform .15s ease;
+    opacity: 0; visibility: hidden;
+    /* Quem segura o menu aberto e a ponte ::before, nao o tempo - por isso a
+       espera aqui e curta, so para perdoar um tremido do mouse. Sem
+       pointer-events de proposito: visibility ja bloqueia o clique, e manter
+       o painel "visivel" durante a espera permite voltar para dentro dele. */
+    transition: opacity .12s ease .1s, transform .12s ease .1s, visibility 0s linear .22s;
     z-index: 50;
   }
+  /* Indo para outro item do menu, o anterior fecha na hora - senao os dois
+     paineis coexistem durante a espera e um sobrepoe o outro. */
+  .nav-links:hover .nav-item:not(:hover) .dropdown-panel {
+    transition: opacity .1s ease, transform .1s ease, visibility 0s linear .1s;
+  }
+  /* Ponte invisivel sobre o vao de 10px entre o botao e o painel: sem ela o
+     mouse perde o hover no meio do caminho e o menu fecha na cara do usuario. */
+  .dropdown-panel::before {
+    content: ""; position: absolute; left: 0; right: 0; top: -22px; height: 22px;
+  }
   .nav-item:hover .dropdown-panel, .nav-item:focus-within .dropdown-panel {
-    opacity: 1; visibility: visible; pointer-events: auto; transform: translateX(-50%) translateY(0);
+    opacity: 1; visibility: visible; transform: translateX(-50%) translateY(0);
+    transition: opacity .14s ease, transform .14s ease, visibility 0s;
   }
   .dropdown-panel.cols-2 { display: grid; grid-template-columns: repeat(2, minmax(160px, 216px)); gap: 1px; }
   .dropdown-panel a {
@@ -982,7 +997,9 @@ Text Domain: quality-blog
 .mobile-nav .dropdown-panel {
   position: static; opacity: 1; visibility: visible; transform: none;
   box-shadow: none; border: 0; padding: 2px 0 10px 14px; min-width: 0;
+  transition: none;
 }
+.mobile-nav .dropdown-panel::before { display: none; }
 
 /* ---------- rodape: partes que o prototipo tinha com estilo inline ---------- */
 .foot-brand .brand { display: flex; align-items: center; gap: 9px; }
