@@ -1,0 +1,1491 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0"
+	xmlns:excerpt="http://wordpress.org/export/1.2/excerpt/"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:wp="http://wordpress.org/export/1.2/">
+<channel>
+	<title>Quality Blog</title>
+	<link>https://example.com</link>
+	<description>Conteudo de demonstracao para testar o tema</description>
+	<pubDate>Fri, 11 Sep 2026 09:00:00 +0000</pubDate>
+	<language>en-US</language>
+	<wp:wxr_version>1.2</wp:wxr_version>
+	<wp:base_site_url>https://example.com</wp:base_site_url>
+	<wp:base_blog_url>https://example.com</wp:base_blog_url>
+	<wp:author>
+		<wp:author_id>2</wp:author_id>
+		<wp:author_login><![CDATA[davidson-ramos]]></wp:author_login>
+		<wp:author_email><![CDATA[davidson-ramos@example.com]]></wp:author_email>
+		<wp:author_display_name><![CDATA[Davidson Ramos]]></wp:author_display_name>
+	</wp:author>
+	<wp:author>
+		<wp:author_id>3</wp:author_id>
+		<wp:author_login><![CDATA[fernanda-craveiro]]></wp:author_login>
+		<wp:author_email><![CDATA[fernanda-craveiro@example.com]]></wp:author_email>
+		<wp:author_display_name><![CDATA[Fernanda Craveiro]]></wp:author_display_name>
+	</wp:author>
+	<wp:author>
+		<wp:author_id>4</wp:author_id>
+		<wp:author_login><![CDATA[jeison-arenhart]]></wp:author_login>
+		<wp:author_email><![CDATA[jeison-arenhart@example.com]]></wp:author_email>
+		<wp:author_display_name><![CDATA[Jeison Arenhart]]></wp:author_display_name>
+	</wp:author>
+	<wp:author>
+		<wp:author_id>5</wp:author_id>
+		<wp:author_login><![CDATA[juliana-geremias]]></wp:author_login>
+		<wp:author_email><![CDATA[juliana-geremias@example.com]]></wp:author_email>
+		<wp:author_display_name><![CDATA[Juliana Geremias]]></wp:author_display_name>
+	</wp:author>
+	<wp:author>
+		<wp:author_id>6</wp:author_id>
+		<wp:author_login><![CDATA[leonardo-bueno]]></wp:author_login>
+		<wp:author_email><![CDATA[leonardo-bueno@example.com]]></wp:author_email>
+		<wp:author_display_name><![CDATA[Leonardo Bueno]]></wp:author_display_name>
+	</wp:author>
+	<wp:author>
+		<wp:author_id>7</wp:author_id>
+		<wp:author_login><![CDATA[marcella-villas-boas]]></wp:author_login>
+		<wp:author_email><![CDATA[marcella-villas-boas@example.com]]></wp:author_email>
+		<wp:author_display_name><![CDATA[Marcella Villas Bôas]]></wp:author_display_name>
+	</wp:author>
+	<wp:author>
+		<wp:author_id>8</wp:author_id>
+		<wp:author_login><![CDATA[rodolfo-paludeto]]></wp:author_login>
+		<wp:author_email><![CDATA[rodolfo-paludeto@example.com]]></wp:author_email>
+		<wp:author_display_name><![CDATA[Rodolfo Paludeto]]></wp:author_display_name>
+	</wp:author>
+	<wp:category>
+		<wp:term_id>2</wp:term_id>
+		<wp:category_nicename><![CDATA[quality-management-systems]]></wp:category_nicename>
+		<wp:category_parent><![CDATA[]]></wp:category_parent>
+		<wp:cat_name><![CDATA[Quality Management Systems]]></wp:cat_name>
+	</wp:category>
+	<wp:category>
+		<wp:term_id>3</wp:term_id>
+		<wp:category_nicename><![CDATA[quality-tools]]></wp:category_nicename>
+		<wp:category_parent><![CDATA[]]></wp:category_parent>
+		<wp:cat_name><![CDATA[Quality Tools]]></wp:cat_name>
+	</wp:category>
+	<wp:category>
+		<wp:term_id>4</wp:term_id>
+		<wp:category_nicename><![CDATA[continuous-improvement]]></wp:category_nicename>
+		<wp:category_parent><![CDATA[]]></wp:category_parent>
+		<wp:cat_name><![CDATA[Continuous Improvement]]></wp:cat_name>
+	</wp:category>
+	<wp:category>
+		<wp:term_id>5</wp:term_id>
+		<wp:category_nicename><![CDATA[organizational-culture]]></wp:category_nicename>
+		<wp:category_parent><![CDATA[]]></wp:category_parent>
+		<wp:cat_name><![CDATA[Organizational Culture]]></wp:cat_name>
+	</wp:category>
+	<wp:category>
+		<wp:term_id>6</wp:term_id>
+		<wp:category_nicename><![CDATA[project-management]]></wp:category_nicename>
+		<wp:category_parent><![CDATA[]]></wp:category_parent>
+		<wp:cat_name><![CDATA[Project Management]]></wp:cat_name>
+	</wp:category>
+	<wp:category>
+		<wp:term_id>7</wp:term_id>
+		<wp:category_nicename><![CDATA[business-strategy]]></wp:category_nicename>
+		<wp:category_parent><![CDATA[]]></wp:category_parent>
+		<wp:cat_name><![CDATA[Business Strategy]]></wp:cat_name>
+	</wp:category>
+	<wp:category>
+		<wp:term_id>8</wp:term_id>
+		<wp:category_nicename><![CDATA[quality-gurus]]></wp:category_nicename>
+		<wp:category_parent><![CDATA[]]></wp:category_parent>
+		<wp:cat_name><![CDATA[Quality Gurus]]></wp:cat_name>
+	</wp:category>
+	<wp:category>
+		<wp:term_id>9</wp:term_id>
+		<wp:category_nicename><![CDATA[process-management]]></wp:category_nicename>
+		<wp:category_parent><![CDATA[]]></wp:category_parent>
+		<wp:cat_name><![CDATA[Process Management]]></wp:cat_name>
+	</wp:category>
+	<wp:category>
+		<wp:term_id>10</wp:term_id>
+		<wp:category_nicename><![CDATA[philosophy-of-excellence]]></wp:category_nicename>
+		<wp:category_parent><![CDATA[]]></wp:category_parent>
+		<wp:cat_name><![CDATA[Philosophy of Excellence]]></wp:cat_name>
+	</wp:category>
+	<item>
+		<title><![CDATA[ISO 9001 Documented Information: the complete guide to Clause 7.5]]></title>
+		<link>https://example.com/iso-9001-documented-information-the-complete-guide-to-clause-7-5/</link>
+		<pubDate>Thu, 10 Sep 2026 09:00:00 +0000</pubDate>
+		<dc:creator><![CDATA[juliana-geremias]]></dc:creator>
+		<content:encoded><![CDATA[<!-- wp:paragraph -->
+<p><strong>Conteudo de demonstracao.</strong> Este texto existe para o tema ter o que exibir no ambiente de teste. Substitua pelo artigo real antes de publicar.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>What counts as documented information, how long to retain it, and the review workflow auditors actually want to see.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2>What the standard actually asks for</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Requirements are written to be auditable, not to be prescriptive. That gap is where most teams get stuck: the clause says what has to be demonstrable, and leaves the method to the organisation.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list -->
+<ul><li>Define the outcome before choosing the tool.</li><li>Keep the record proportional to the risk.</li><li>Review on a cadence someone actually owns.</li></ul>
+<!-- /wp:list -->
+
+<!-- wp:heading -->
+<h2>Where it breaks in practice</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>The failure is rarely the process on paper. It is the handover between the person who designed it and the people who run it every day.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:quote -->
+<blockquote class="wp-block-quote"><p>A process nobody owns is a process nobody runs.</p></blockquote>
+<!-- /wp:quote -->
+]]></content:encoded>
+		<excerpt:encoded><![CDATA[What counts as documented information, how long to retain it, and the review workflow auditors actually want to see.]]></excerpt:encoded>
+		<wp:post_id>100</wp:post_id>
+		<wp:post_date><![CDATA[2026-09-10 09:00:00]]></wp:post_date>
+		<wp:post_date_gmt><![CDATA[2026-09-10 09:00:00]]></wp:post_date_gmt>
+		<wp:comment_status><![CDATA[open]]></wp:comment_status>
+		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
+		<wp:post_name><![CDATA[iso-9001-documented-information-the-complete-guide-to-clause-7-5]]></wp:post_name>
+		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type><![CDATA[post]]></wp:post_type>
+		<wp:is_sticky>0</wp:is_sticky>
+		<category domain="category" nicename="quality-management-systems"><![CDATA[Quality Management Systems]]></category>
+	</item>
+	<item>
+		<title><![CDATA[The Ishikawa diagram: a practical field guide]]></title>
+		<link>https://example.com/the-ishikawa-diagram-a-practical-field-guide/</link>
+		<pubDate>Mon, 07 Sep 2026 09:00:00 +0000</pubDate>
+		<dc:creator><![CDATA[davidson-ramos]]></dc:creator>
+		<content:encoded><![CDATA[<!-- wp:paragraph -->
+<p><strong>Conteudo de demonstracao.</strong> Este texto existe para o tema ter o que exibir no ambiente de teste. Substitua pelo artigo real antes de publicar.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>This piece looks at the Ishikawa diagram: a practical field guide and what it changes for teams running a quality system day to day.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2>What the standard actually asks for</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Requirements are written to be auditable, not to be prescriptive. That gap is where most teams get stuck: the clause says what has to be demonstrable, and leaves the method to the organisation.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list -->
+<ul><li>Define the outcome before choosing the tool.</li><li>Keep the record proportional to the risk.</li><li>Review on a cadence someone actually owns.</li></ul>
+<!-- /wp:list -->
+
+<!-- wp:heading -->
+<h2>Where it breaks in practice</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>The failure is rarely the process on paper. It is the handover between the person who designed it and the people who run it every day.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:quote -->
+<blockquote class="wp-block-quote"><p>A process nobody owns is a process nobody runs.</p></blockquote>
+<!-- /wp:quote -->
+]]></content:encoded>
+		<excerpt:encoded><![CDATA[A practical look at the Ishikawa diagram: a practical field guide]]></excerpt:encoded>
+		<wp:post_id>101</wp:post_id>
+		<wp:post_date><![CDATA[2026-09-07 09:00:00]]></wp:post_date>
+		<wp:post_date_gmt><![CDATA[2026-09-07 09:00:00]]></wp:post_date_gmt>
+		<wp:comment_status><![CDATA[open]]></wp:comment_status>
+		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
+		<wp:post_name><![CDATA[the-ishikawa-diagram-a-practical-field-guide]]></wp:post_name>
+		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type><![CDATA[post]]></wp:post_type>
+		<wp:is_sticky>0</wp:is_sticky>
+		<category domain="category" nicename="quality-tools"><![CDATA[Quality Tools]]></category>
+	</item>
+	<item>
+		<title><![CDATA[Risk management under ISO 9001: a 7-step process]]></title>
+		<link>https://example.com/risk-management-under-iso-9001-a-7-step-process/</link>
+		<pubDate>Fri, 04 Sep 2026 09:00:00 +0000</pubDate>
+		<dc:creator><![CDATA[rodolfo-paludeto]]></dc:creator>
+		<content:encoded><![CDATA[<!-- wp:paragraph -->
+<p><strong>Conteudo de demonstracao.</strong> Este texto existe para o tema ter o que exibir no ambiente de teste. Substitua pelo artigo real antes de publicar.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>This piece looks at risk management under ISO 9001: a 7-step process and what it changes for teams running a quality system day to day.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2>What the standard actually asks for</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Requirements are written to be auditable, not to be prescriptive. That gap is where most teams get stuck: the clause says what has to be demonstrable, and leaves the method to the organisation.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list -->
+<ul><li>Define the outcome before choosing the tool.</li><li>Keep the record proportional to the risk.</li><li>Review on a cadence someone actually owns.</li></ul>
+<!-- /wp:list -->
+
+<!-- wp:heading -->
+<h2>Where it breaks in practice</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>The failure is rarely the process on paper. It is the handover between the person who designed it and the people who run it every day.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:quote -->
+<blockquote class="wp-block-quote"><p>A process nobody owns is a process nobody runs.</p></blockquote>
+<!-- /wp:quote -->
+]]></content:encoded>
+		<excerpt:encoded><![CDATA[A practical look at risk management under ISO 9001: a 7-step process]]></excerpt:encoded>
+		<wp:post_id>102</wp:post_id>
+		<wp:post_date><![CDATA[2026-09-04 09:00:00]]></wp:post_date>
+		<wp:post_date_gmt><![CDATA[2026-09-04 09:00:00]]></wp:post_date_gmt>
+		<wp:comment_status><![CDATA[open]]></wp:comment_status>
+		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
+		<wp:post_name><![CDATA[risk-management-under-iso-9001-a-7-step-process]]></wp:post_name>
+		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type><![CDATA[post]]></wp:post_type>
+		<wp:is_sticky>0</wp:is_sticky>
+		<category domain="category" nicename="continuous-improvement"><![CDATA[Continuous Improvement]]></category>
+	</item>
+	<item>
+		<title><![CDATA[Joseph Juran: the man behind the quality trilogy]]></title>
+		<link>https://example.com/joseph-juran-the-man-behind-the-quality-trilogy/</link>
+		<pubDate>Tue, 01 Sep 2026 09:00:00 +0000</pubDate>
+		<dc:creator><![CDATA[leonardo-bueno]]></dc:creator>
+		<content:encoded><![CDATA[<!-- wp:paragraph -->
+<p><strong>Conteudo de demonstracao.</strong> Este texto existe para o tema ter o que exibir no ambiente de teste. Substitua pelo artigo real antes de publicar.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>This piece looks at joseph Juran: the man behind the quality trilogy and what it changes for teams running a quality system day to day.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2>What the standard actually asks for</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Requirements are written to be auditable, not to be prescriptive. That gap is where most teams get stuck: the clause says what has to be demonstrable, and leaves the method to the organisation.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list -->
+<ul><li>Define the outcome before choosing the tool.</li><li>Keep the record proportional to the risk.</li><li>Review on a cadence someone actually owns.</li></ul>
+<!-- /wp:list -->
+
+<!-- wp:heading -->
+<h2>Where it breaks in practice</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>The failure is rarely the process on paper. It is the handover between the person who designed it and the people who run it every day.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:quote -->
+<blockquote class="wp-block-quote"><p>A process nobody owns is a process nobody runs.</p></blockquote>
+<!-- /wp:quote -->
+]]></content:encoded>
+		<excerpt:encoded><![CDATA[A practical look at joseph Juran: the man behind the quality trilogy]]></excerpt:encoded>
+		<wp:post_id>103</wp:post_id>
+		<wp:post_date><![CDATA[2026-09-01 09:00:00]]></wp:post_date>
+		<wp:post_date_gmt><![CDATA[2026-09-01 09:00:00]]></wp:post_date_gmt>
+		<wp:comment_status><![CDATA[open]]></wp:comment_status>
+		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
+		<wp:post_name><![CDATA[joseph-juran-the-man-behind-the-quality-trilogy]]></wp:post_name>
+		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type><![CDATA[post]]></wp:post_type>
+		<wp:is_sticky>0</wp:is_sticky>
+		<category domain="category" nicename="quality-gurus"><![CDATA[Quality Gurus]]></category>
+	</item>
+	<item>
+		<title><![CDATA[The PDCA cycle applied to quality management]]></title>
+		<link>https://example.com/the-pdca-cycle-applied-to-quality-management/</link>
+		<pubDate>Sat, 29 Aug 2026 09:00:00 +0000</pubDate>
+		<dc:creator><![CDATA[rodolfo-paludeto]]></dc:creator>
+		<content:encoded><![CDATA[<!-- wp:paragraph -->
+<p><strong>Conteudo de demonstracao.</strong> Este texto existe para o tema ter o que exibir no ambiente de teste. Substitua pelo artigo real antes de publicar.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>This piece looks at the PDCA cycle applied to quality management and what it changes for teams running a quality system day to day.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2>What the standard actually asks for</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Requirements are written to be auditable, not to be prescriptive. That gap is where most teams get stuck: the clause says what has to be demonstrable, and leaves the method to the organisation.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list -->
+<ul><li>Define the outcome before choosing the tool.</li><li>Keep the record proportional to the risk.</li><li>Review on a cadence someone actually owns.</li></ul>
+<!-- /wp:list -->
+
+<!-- wp:heading -->
+<h2>Where it breaks in practice</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>The failure is rarely the process on paper. It is the handover between the person who designed it and the people who run it every day.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:quote -->
+<blockquote class="wp-block-quote"><p>A process nobody owns is a process nobody runs.</p></blockquote>
+<!-- /wp:quote -->
+]]></content:encoded>
+		<excerpt:encoded><![CDATA[A practical look at the PDCA cycle applied to quality management]]></excerpt:encoded>
+		<wp:post_id>104</wp:post_id>
+		<wp:post_date><![CDATA[2026-08-29 09:00:00]]></wp:post_date>
+		<wp:post_date_gmt><![CDATA[2026-08-29 09:00:00]]></wp:post_date_gmt>
+		<wp:comment_status><![CDATA[open]]></wp:comment_status>
+		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
+		<wp:post_name><![CDATA[the-pdca-cycle-applied-to-quality-management]]></wp:post_name>
+		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type><![CDATA[post]]></wp:post_type>
+		<wp:is_sticky>0</wp:is_sticky>
+		<category domain="category" nicename="process-management"><![CDATA[Process Management]]></category>
+	</item>
+	<item>
+		<title><![CDATA[Setting SMART objectives for your QMS under Clause 6.2]]></title>
+		<link>https://example.com/setting-smart-objectives-for-your-qms-under-clause-6-2/</link>
+		<pubDate>Wed, 26 Aug 2026 09:00:00 +0000</pubDate>
+		<dc:creator><![CDATA[juliana-geremias]]></dc:creator>
+		<content:encoded><![CDATA[<!-- wp:paragraph -->
+<p><strong>Conteudo de demonstracao.</strong> Este texto existe para o tema ter o que exibir no ambiente de teste. Substitua pelo artigo real antes de publicar.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>A working framework for turning policy into measurable targets your team will actually track.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2>What the standard actually asks for</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Requirements are written to be auditable, not to be prescriptive. That gap is where most teams get stuck: the clause says what has to be demonstrable, and leaves the method to the organisation.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list -->
+<ul><li>Define the outcome before choosing the tool.</li><li>Keep the record proportional to the risk.</li><li>Review on a cadence someone actually owns.</li></ul>
+<!-- /wp:list -->
+
+<!-- wp:heading -->
+<h2>Where it breaks in practice</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>The failure is rarely the process on paper. It is the handover between the person who designed it and the people who run it every day.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:quote -->
+<blockquote class="wp-block-quote"><p>A process nobody owns is a process nobody runs.</p></blockquote>
+<!-- /wp:quote -->
+]]></content:encoded>
+		<excerpt:encoded><![CDATA[A working framework for turning policy into measurable targets your team will actually track.]]></excerpt:encoded>
+		<wp:post_id>105</wp:post_id>
+		<wp:post_date><![CDATA[2026-08-26 09:00:00]]></wp:post_date>
+		<wp:post_date_gmt><![CDATA[2026-08-26 09:00:00]]></wp:post_date_gmt>
+		<wp:comment_status><![CDATA[open]]></wp:comment_status>
+		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
+		<wp:post_name><![CDATA[setting-smart-objectives-for-your-qms-under-clause-6-2]]></wp:post_name>
+		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type><![CDATA[post]]></wp:post_type>
+		<wp:is_sticky>0</wp:is_sticky>
+		<category domain="category" nicename="quality-management-systems"><![CDATA[Quality Management Systems]]></category>
+	</item>
+	<item>
+		<title><![CDATA[5W2H: what it is, how to run it, and real examples]]></title>
+		<link>https://example.com/5w2h-what-it-is-how-to-run-it-and-real-examples/</link>
+		<pubDate>Sun, 23 Aug 2026 09:00:00 +0000</pubDate>
+		<dc:creator><![CDATA[jeison-arenhart]]></dc:creator>
+		<content:encoded><![CDATA[<!-- wp:paragraph -->
+<p><strong>Conteudo de demonstracao.</strong> Este texto existe para o tema ter o que exibir no ambiente de teste. Substitua pelo artigo real antes de publicar.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>A lightweight planning method for turning meeting decisions into owned, dated actions.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2>What the standard actually asks for</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Requirements are written to be auditable, not to be prescriptive. That gap is where most teams get stuck: the clause says what has to be demonstrable, and leaves the method to the organisation.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list -->
+<ul><li>Define the outcome before choosing the tool.</li><li>Keep the record proportional to the risk.</li><li>Review on a cadence someone actually owns.</li></ul>
+<!-- /wp:list -->
+
+<!-- wp:heading -->
+<h2>Where it breaks in practice</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>The failure is rarely the process on paper. It is the handover between the person who designed it and the people who run it every day.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:quote -->
+<blockquote class="wp-block-quote"><p>A process nobody owns is a process nobody runs.</p></blockquote>
+<!-- /wp:quote -->
+]]></content:encoded>
+		<excerpt:encoded><![CDATA[A lightweight planning method for turning meeting decisions into owned, dated actions.]]></excerpt:encoded>
+		<wp:post_id>106</wp:post_id>
+		<wp:post_date><![CDATA[2026-08-23 09:00:00]]></wp:post_date>
+		<wp:post_date_gmt><![CDATA[2026-08-23 09:00:00]]></wp:post_date_gmt>
+		<wp:comment_status><![CDATA[open]]></wp:comment_status>
+		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
+		<wp:post_name><![CDATA[5w2h-what-it-is-how-to-run-it-and-real-examples]]></wp:post_name>
+		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type><![CDATA[post]]></wp:post_type>
+		<wp:is_sticky>0</wp:is_sticky>
+		<category domain="category" nicename="quality-tools"><![CDATA[Quality Tools]]></category>
+	</item>
+	<item>
+		<title><![CDATA[Nonconforming outputs: a technical walkthrough of Clause 8.7]]></title>
+		<link>https://example.com/nonconforming-outputs-a-technical-walkthrough-of-clause-8-7/</link>
+		<pubDate>Thu, 20 Aug 2026 09:00:00 +0000</pubDate>
+		<dc:creator><![CDATA[rodolfo-paludeto]]></dc:creator>
+		<content:encoded><![CDATA[<!-- wp:paragraph -->
+<p><strong>Conteudo de demonstracao.</strong> Este texto existe para o tema ter o que exibir no ambiente de teste. Substitua pelo artigo real antes de publicar.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>One of the most operational, audit-sensitive clauses in ISO 9001:2015 — explained end to end.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2>What the standard actually asks for</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Requirements are written to be auditable, not to be prescriptive. That gap is where most teams get stuck: the clause says what has to be demonstrable, and leaves the method to the organisation.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list -->
+<ul><li>Define the outcome before choosing the tool.</li><li>Keep the record proportional to the risk.</li><li>Review on a cadence someone actually owns.</li></ul>
+<!-- /wp:list -->
+
+<!-- wp:heading -->
+<h2>Where it breaks in practice</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>The failure is rarely the process on paper. It is the handover between the person who designed it and the people who run it every day.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:quote -->
+<blockquote class="wp-block-quote"><p>A process nobody owns is a process nobody runs.</p></blockquote>
+<!-- /wp:quote -->
+]]></content:encoded>
+		<excerpt:encoded><![CDATA[One of the most operational, audit-sensitive clauses in ISO 9001:2015 — explained end to end.]]></excerpt:encoded>
+		<wp:post_id>107</wp:post_id>
+		<wp:post_date><![CDATA[2026-08-20 09:00:00]]></wp:post_date>
+		<wp:post_date_gmt><![CDATA[2026-08-20 09:00:00]]></wp:post_date_gmt>
+		<wp:comment_status><![CDATA[open]]></wp:comment_status>
+		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
+		<wp:post_name><![CDATA[nonconforming-outputs-a-technical-walkthrough-of-clause-8-7]]></wp:post_name>
+		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type><![CDATA[post]]></wp:post_type>
+		<wp:is_sticky>0</wp:is_sticky>
+		<category domain="category" nicename="continuous-improvement"><![CDATA[Continuous Improvement]]></category>
+	</item>
+	<item>
+		<title><![CDATA[Knowledge management: turning experience into a company asset]]></title>
+		<link>https://example.com/knowledge-management-turning-experience-into-a-company-asset/</link>
+		<pubDate>Mon, 17 Aug 2026 09:00:00 +0000</pubDate>
+		<dc:creator><![CDATA[fernanda-craveiro]]></dc:creator>
+		<content:encoded><![CDATA[<!-- wp:paragraph -->
+<p><strong>Conteudo de demonstracao.</strong> Este texto existe para o tema ter o que exibir no ambiente de teste. Substitua pelo artigo real antes de publicar.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>The practices that stop expertise from walking out the door when people do.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2>What the standard actually asks for</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Requirements are written to be auditable, not to be prescriptive. That gap is where most teams get stuck: the clause says what has to be demonstrable, and leaves the method to the organisation.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list -->
+<ul><li>Define the outcome before choosing the tool.</li><li>Keep the record proportional to the risk.</li><li>Review on a cadence someone actually owns.</li></ul>
+<!-- /wp:list -->
+
+<!-- wp:heading -->
+<h2>Where it breaks in practice</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>The failure is rarely the process on paper. It is the handover between the person who designed it and the people who run it every day.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:quote -->
+<blockquote class="wp-block-quote"><p>A process nobody owns is a process nobody runs.</p></blockquote>
+<!-- /wp:quote -->
+]]></content:encoded>
+		<excerpt:encoded><![CDATA[The practices that stop expertise from walking out the door when people do.]]></excerpt:encoded>
+		<wp:post_id>108</wp:post_id>
+		<wp:post_date><![CDATA[2026-08-17 09:00:00]]></wp:post_date>
+		<wp:post_date_gmt><![CDATA[2026-08-17 09:00:00]]></wp:post_date_gmt>
+		<wp:comment_status><![CDATA[open]]></wp:comment_status>
+		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
+		<wp:post_name><![CDATA[knowledge-management-turning-experience-into-a-company-asset]]></wp:post_name>
+		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type><![CDATA[post]]></wp:post_type>
+		<wp:is_sticky>0</wp:is_sticky>
+		<category domain="category" nicename="organizational-culture"><![CDATA[Organizational Culture]]></category>
+	</item>
+	<item>
+		<title><![CDATA[Project portfolios: are you maximizing organizational results?]]></title>
+		<link>https://example.com/project-portfolios-are-you-maximizing-organizational-results/</link>
+		<pubDate>Fri, 14 Aug 2026 09:00:00 +0000</pubDate>
+		<dc:creator><![CDATA[marcella-villas-boas]]></dc:creator>
+		<content:encoded><![CDATA[<!-- wp:paragraph -->
+<p><strong>Conteudo de demonstracao.</strong> Este texto existe para o tema ter o que exibir no ambiente de teste. Substitua pelo artigo real antes de publicar.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>A prioritization model for teams juggling more initiatives than capacity.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2>What the standard actually asks for</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Requirements are written to be auditable, not to be prescriptive. That gap is where most teams get stuck: the clause says what has to be demonstrable, and leaves the method to the organisation.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list -->
+<ul><li>Define the outcome before choosing the tool.</li><li>Keep the record proportional to the risk.</li><li>Review on a cadence someone actually owns.</li></ul>
+<!-- /wp:list -->
+
+<!-- wp:heading -->
+<h2>Where it breaks in practice</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>The failure is rarely the process on paper. It is the handover between the person who designed it and the people who run it every day.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:quote -->
+<blockquote class="wp-block-quote"><p>A process nobody owns is a process nobody runs.</p></blockquote>
+<!-- /wp:quote -->
+]]></content:encoded>
+		<excerpt:encoded><![CDATA[A prioritization model for teams juggling more initiatives than capacity.]]></excerpt:encoded>
+		<wp:post_id>109</wp:post_id>
+		<wp:post_date><![CDATA[2026-08-14 09:00:00]]></wp:post_date>
+		<wp:post_date_gmt><![CDATA[2026-08-14 09:00:00]]></wp:post_date_gmt>
+		<wp:comment_status><![CDATA[open]]></wp:comment_status>
+		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
+		<wp:post_name><![CDATA[project-portfolios-are-you-maximizing-organizational-results]]></wp:post_name>
+		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type><![CDATA[post]]></wp:post_type>
+		<wp:is_sticky>0</wp:is_sticky>
+		<category domain="category" nicename="project-management"><![CDATA[Project Management]]></category>
+	</item>
+	<item>
+		<title><![CDATA[W. Edwards Deming and the 14 points that redefined quality]]></title>
+		<link>https://example.com/w-edwards-deming-and-the-14-points-that-redefined-quality/</link>
+		<pubDate>Tue, 11 Aug 2026 09:00:00 +0000</pubDate>
+		<dc:creator><![CDATA[leonardo-bueno]]></dc:creator>
+		<content:encoded><![CDATA[<!-- wp:paragraph -->
+<p><strong>Conteudo de demonstracao.</strong> Este texto existe para o tema ter o que exibir no ambiente de teste. Substitua pelo artigo real antes de publicar.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Why a statistician&#x27;s ideas from the 1950s still shape every modern QMS.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2>What the standard actually asks for</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Requirements are written to be auditable, not to be prescriptive. That gap is where most teams get stuck: the clause says what has to be demonstrable, and leaves the method to the organisation.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list -->
+<ul><li>Define the outcome before choosing the tool.</li><li>Keep the record proportional to the risk.</li><li>Review on a cadence someone actually owns.</li></ul>
+<!-- /wp:list -->
+
+<!-- wp:heading -->
+<h2>Where it breaks in practice</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>The failure is rarely the process on paper. It is the handover between the person who designed it and the people who run it every day.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:quote -->
+<blockquote class="wp-block-quote"><p>A process nobody owns is a process nobody runs.</p></blockquote>
+<!-- /wp:quote -->
+]]></content:encoded>
+		<excerpt:encoded><![CDATA[Why a statistician's ideas from the 1950s still shape every modern QMS.]]></excerpt:encoded>
+		<wp:post_id>110</wp:post_id>
+		<wp:post_date><![CDATA[2026-08-11 09:00:00]]></wp:post_date>
+		<wp:post_date_gmt><![CDATA[2026-08-11 09:00:00]]></wp:post_date_gmt>
+		<wp:comment_status><![CDATA[open]]></wp:comment_status>
+		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
+		<wp:post_name><![CDATA[w-edwards-deming-and-the-14-points-that-redefined-quality]]></wp:post_name>
+		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type><![CDATA[post]]></wp:post_type>
+		<wp:is_sticky>0</wp:is_sticky>
+		<category domain="category" nicename="quality-gurus"><![CDATA[Quality Gurus]]></category>
+	</item>
+	<item>
+		<title><![CDATA[7 quality tools every team should know]]></title>
+		<link>https://example.com/7-quality-tools-every-team-should-know/</link>
+		<pubDate>Sat, 08 Aug 2026 09:00:00 +0000</pubDate>
+		<dc:creator><![CDATA[leonardo-bueno]]></dc:creator>
+		<content:encoded><![CDATA[<!-- wp:paragraph -->
+<p><strong>Conteudo de demonstracao.</strong> Este texto existe para o tema ter o que exibir no ambiente de teste. Substitua pelo artigo real antes de publicar.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>This piece looks at 7 quality tools every team should know and what it changes for teams running a quality system day to day.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2>What the standard actually asks for</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Requirements are written to be auditable, not to be prescriptive. That gap is where most teams get stuck: the clause says what has to be demonstrable, and leaves the method to the organisation.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list -->
+<ul><li>Define the outcome before choosing the tool.</li><li>Keep the record proportional to the risk.</li><li>Review on a cadence someone actually owns.</li></ul>
+<!-- /wp:list -->
+
+<!-- wp:heading -->
+<h2>Where it breaks in practice</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>The failure is rarely the process on paper. It is the handover between the person who designed it and the people who run it every day.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:quote -->
+<blockquote class="wp-block-quote"><p>A process nobody owns is a process nobody runs.</p></blockquote>
+<!-- /wp:quote -->
+]]></content:encoded>
+		<excerpt:encoded><![CDATA[A practical look at 7 quality tools every team should know]]></excerpt:encoded>
+		<wp:post_id>111</wp:post_id>
+		<wp:post_date><![CDATA[2026-08-08 09:00:00]]></wp:post_date>
+		<wp:post_date_gmt><![CDATA[2026-08-08 09:00:00]]></wp:post_date_gmt>
+		<wp:comment_status><![CDATA[open]]></wp:comment_status>
+		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
+		<wp:post_name><![CDATA[7-quality-tools-every-team-should-know]]></wp:post_name>
+		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type><![CDATA[post]]></wp:post_type>
+		<wp:is_sticky>0</wp:is_sticky>
+		<category domain="category" nicename="quality-tools"><![CDATA[Quality Tools]]></category>
+	</item>
+	<item>
+		<title><![CDATA[3 reasons to stop running your QMS on spreadsheets]]></title>
+		<link>https://example.com/3-reasons-to-stop-running-your-qms-on-spreadsheets/</link>
+		<pubDate>Wed, 05 Aug 2026 09:00:00 +0000</pubDate>
+		<dc:creator><![CDATA[marcella-villas-boas]]></dc:creator>
+		<content:encoded><![CDATA[<!-- wp:paragraph -->
+<p><strong>Conteudo de demonstracao.</strong> Este texto existe para o tema ter o que exibir no ambiente de teste. Substitua pelo artigo real antes de publicar.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>This piece looks at 3 reasons to stop running your QMS on spreadsheets and what it changes for teams running a quality system day to day.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2>What the standard actually asks for</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Requirements are written to be auditable, not to be prescriptive. That gap is where most teams get stuck: the clause says what has to be demonstrable, and leaves the method to the organisation.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list -->
+<ul><li>Define the outcome before choosing the tool.</li><li>Keep the record proportional to the risk.</li><li>Review on a cadence someone actually owns.</li></ul>
+<!-- /wp:list -->
+
+<!-- wp:heading -->
+<h2>Where it breaks in practice</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>The failure is rarely the process on paper. It is the handover between the person who designed it and the people who run it every day.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:quote -->
+<blockquote class="wp-block-quote"><p>A process nobody owns is a process nobody runs.</p></blockquote>
+<!-- /wp:quote -->
+]]></content:encoded>
+		<excerpt:encoded><![CDATA[A practical look at 3 reasons to stop running your QMS on spreadsheets]]></excerpt:encoded>
+		<wp:post_id>112</wp:post_id>
+		<wp:post_date><![CDATA[2026-08-05 09:00:00]]></wp:post_date>
+		<wp:post_date_gmt><![CDATA[2026-08-05 09:00:00]]></wp:post_date_gmt>
+		<wp:comment_status><![CDATA[open]]></wp:comment_status>
+		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
+		<wp:post_name><![CDATA[3-reasons-to-stop-running-your-qms-on-spreadsheets]]></wp:post_name>
+		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type><![CDATA[post]]></wp:post_type>
+		<wp:is_sticky>0</wp:is_sticky>
+		<category domain="category" nicename="continuous-improvement"><![CDATA[Continuous Improvement]]></category>
+	</item>
+	<item>
+		<title><![CDATA[Talent management: don't depend on corporate heroes]]></title>
+		<link>https://example.com/talent-management-don-t-depend-on-corporate-heroes/</link>
+		<pubDate>Sun, 02 Aug 2026 09:00:00 +0000</pubDate>
+		<dc:creator><![CDATA[rodolfo-paludeto]]></dc:creator>
+		<content:encoded><![CDATA[<!-- wp:paragraph -->
+<p><strong>Conteudo de demonstracao.</strong> Este texto existe para o tema ter o que exibir no ambiente de teste. Substitua pelo artigo real antes de publicar.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>This piece looks at talent management: don&#x27;t depend on corporate heroes and what it changes for teams running a quality system day to day.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2>What the standard actually asks for</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Requirements are written to be auditable, not to be prescriptive. That gap is where most teams get stuck: the clause says what has to be demonstrable, and leaves the method to the organisation.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list -->
+<ul><li>Define the outcome before choosing the tool.</li><li>Keep the record proportional to the risk.</li><li>Review on a cadence someone actually owns.</li></ul>
+<!-- /wp:list -->
+
+<!-- wp:heading -->
+<h2>Where it breaks in practice</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>The failure is rarely the process on paper. It is the handover between the person who designed it and the people who run it every day.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:quote -->
+<blockquote class="wp-block-quote"><p>A process nobody owns is a process nobody runs.</p></blockquote>
+<!-- /wp:quote -->
+]]></content:encoded>
+		<excerpt:encoded><![CDATA[A practical look at talent management: don't depend on corporate heroes]]></excerpt:encoded>
+		<wp:post_id>113</wp:post_id>
+		<wp:post_date><![CDATA[2026-08-02 09:00:00]]></wp:post_date>
+		<wp:post_date_gmt><![CDATA[2026-08-02 09:00:00]]></wp:post_date_gmt>
+		<wp:comment_status><![CDATA[open]]></wp:comment_status>
+		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
+		<wp:post_name><![CDATA[talent-management-don-t-depend-on-corporate-heroes]]></wp:post_name>
+		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type><![CDATA[post]]></wp:post_type>
+		<wp:is_sticky>0</wp:is_sticky>
+		<category domain="category" nicename="organizational-culture"><![CDATA[Organizational Culture]]></category>
+	</item>
+	<item>
+		<title><![CDATA[10 types of corporate training worth investing in]]></title>
+		<link>https://example.com/10-types-of-corporate-training-worth-investing-in/</link>
+		<pubDate>Thu, 30 Jul 2026 09:00:00 +0000</pubDate>
+		<dc:creator><![CDATA[davidson-ramos]]></dc:creator>
+		<content:encoded><![CDATA[<!-- wp:paragraph -->
+<p><strong>Conteudo de demonstracao.</strong> Este texto existe para o tema ter o que exibir no ambiente de teste. Substitua pelo artigo real antes de publicar.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>This piece looks at 10 types of corporate training worth investing in and what it changes for teams running a quality system day to day.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2>What the standard actually asks for</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Requirements are written to be auditable, not to be prescriptive. That gap is where most teams get stuck: the clause says what has to be demonstrable, and leaves the method to the organisation.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list -->
+<ul><li>Define the outcome before choosing the tool.</li><li>Keep the record proportional to the risk.</li><li>Review on a cadence someone actually owns.</li></ul>
+<!-- /wp:list -->
+
+<!-- wp:heading -->
+<h2>Where it breaks in practice</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>The failure is rarely the process on paper. It is the handover between the person who designed it and the people who run it every day.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:quote -->
+<blockquote class="wp-block-quote"><p>A process nobody owns is a process nobody runs.</p></blockquote>
+<!-- /wp:quote -->
+]]></content:encoded>
+		<excerpt:encoded><![CDATA[A practical look at 10 types of corporate training worth investing in]]></excerpt:encoded>
+		<wp:post_id>114</wp:post_id>
+		<wp:post_date><![CDATA[2026-07-30 09:00:00]]></wp:post_date>
+		<wp:post_date_gmt><![CDATA[2026-07-30 09:00:00]]></wp:post_date_gmt>
+		<wp:comment_status><![CDATA[open]]></wp:comment_status>
+		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
+		<wp:post_name><![CDATA[10-types-of-corporate-training-worth-investing-in]]></wp:post_name>
+		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type><![CDATA[post]]></wp:post_type>
+		<wp:is_sticky>0</wp:is_sticky>
+		<category domain="category" nicename="organizational-culture"><![CDATA[Organizational Culture]]></category>
+	</item>
+	<item>
+		<title><![CDATA[5 project management mistakes that cost the most]]></title>
+		<link>https://example.com/5-project-management-mistakes-that-cost-the-most/</link>
+		<pubDate>Mon, 27 Jul 2026 09:00:00 +0000</pubDate>
+		<dc:creator><![CDATA[fernanda-craveiro]]></dc:creator>
+		<content:encoded><![CDATA[<!-- wp:paragraph -->
+<p><strong>Conteudo de demonstracao.</strong> Este texto existe para o tema ter o que exibir no ambiente de teste. Substitua pelo artigo real antes de publicar.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>This piece looks at 5 project management mistakes that cost the most and what it changes for teams running a quality system day to day.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2>What the standard actually asks for</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Requirements are written to be auditable, not to be prescriptive. That gap is where most teams get stuck: the clause says what has to be demonstrable, and leaves the method to the organisation.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list -->
+<ul><li>Define the outcome before choosing the tool.</li><li>Keep the record proportional to the risk.</li><li>Review on a cadence someone actually owns.</li></ul>
+<!-- /wp:list -->
+
+<!-- wp:heading -->
+<h2>Where it breaks in practice</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>The failure is rarely the process on paper. It is the handover between the person who designed it and the people who run it every day.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:quote -->
+<blockquote class="wp-block-quote"><p>A process nobody owns is a process nobody runs.</p></blockquote>
+<!-- /wp:quote -->
+]]></content:encoded>
+		<excerpt:encoded><![CDATA[A practical look at 5 project management mistakes that cost the most]]></excerpt:encoded>
+		<wp:post_id>115</wp:post_id>
+		<wp:post_date><![CDATA[2026-07-27 09:00:00]]></wp:post_date>
+		<wp:post_date_gmt><![CDATA[2026-07-27 09:00:00]]></wp:post_date_gmt>
+		<wp:comment_status><![CDATA[open]]></wp:comment_status>
+		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
+		<wp:post_name><![CDATA[5-project-management-mistakes-that-cost-the-most]]></wp:post_name>
+		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type><![CDATA[post]]></wp:post_type>
+		<wp:is_sticky>0</wp:is_sticky>
+		<category domain="category" nicename="project-management"><![CDATA[Project Management]]></category>
+	</item>
+	<item>
+		<title><![CDATA[5 books every project manager should read]]></title>
+		<link>https://example.com/5-books-every-project-manager-should-read/</link>
+		<pubDate>Fri, 24 Jul 2026 09:00:00 +0000</pubDate>
+		<dc:creator><![CDATA[jeison-arenhart]]></dc:creator>
+		<content:encoded><![CDATA[<!-- wp:paragraph -->
+<p><strong>Conteudo de demonstracao.</strong> Este texto existe para o tema ter o que exibir no ambiente de teste. Substitua pelo artigo real antes de publicar.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>This piece looks at 5 books every project manager should read and what it changes for teams running a quality system day to day.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2>What the standard actually asks for</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Requirements are written to be auditable, not to be prescriptive. That gap is where most teams get stuck: the clause says what has to be demonstrable, and leaves the method to the organisation.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list -->
+<ul><li>Define the outcome before choosing the tool.</li><li>Keep the record proportional to the risk.</li><li>Review on a cadence someone actually owns.</li></ul>
+<!-- /wp:list -->
+
+<!-- wp:heading -->
+<h2>Where it breaks in practice</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>The failure is rarely the process on paper. It is the handover between the person who designed it and the people who run it every day.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:quote -->
+<blockquote class="wp-block-quote"><p>A process nobody owns is a process nobody runs.</p></blockquote>
+<!-- /wp:quote -->
+]]></content:encoded>
+		<excerpt:encoded><![CDATA[A practical look at 5 books every project manager should read]]></excerpt:encoded>
+		<wp:post_id>116</wp:post_id>
+		<wp:post_date><![CDATA[2026-07-24 09:00:00]]></wp:post_date>
+		<wp:post_date_gmt><![CDATA[2026-07-24 09:00:00]]></wp:post_date_gmt>
+		<wp:comment_status><![CDATA[open]]></wp:comment_status>
+		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
+		<wp:post_name><![CDATA[5-books-every-project-manager-should-read]]></wp:post_name>
+		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type><![CDATA[post]]></wp:post_type>
+		<wp:is_sticky>0</wp:is_sticky>
+		<category domain="category" nicename="project-management"><![CDATA[Project Management]]></category>
+	</item>
+	<item>
+		<title><![CDATA[Supplier management: what it is and how to do it well]]></title>
+		<link>https://example.com/supplier-management-what-it-is-and-how-to-do-it-well/</link>
+		<pubDate>Tue, 21 Jul 2026 09:00:00 +0000</pubDate>
+		<dc:creator><![CDATA[juliana-geremias]]></dc:creator>
+		<content:encoded><![CDATA[<!-- wp:paragraph -->
+<p><strong>Conteudo de demonstracao.</strong> Este texto existe para o tema ter o que exibir no ambiente de teste. Substitua pelo artigo real antes de publicar.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>This piece looks at supplier management: what it is and how to do it well and what it changes for teams running a quality system day to day.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2>What the standard actually asks for</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Requirements are written to be auditable, not to be prescriptive. That gap is where most teams get stuck: the clause says what has to be demonstrable, and leaves the method to the organisation.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list -->
+<ul><li>Define the outcome before choosing the tool.</li><li>Keep the record proportional to the risk.</li><li>Review on a cadence someone actually owns.</li></ul>
+<!-- /wp:list -->
+
+<!-- wp:heading -->
+<h2>Where it breaks in practice</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>The failure is rarely the process on paper. It is the handover between the person who designed it and the people who run it every day.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:quote -->
+<blockquote class="wp-block-quote"><p>A process nobody owns is a process nobody runs.</p></blockquote>
+<!-- /wp:quote -->
+]]></content:encoded>
+		<excerpt:encoded><![CDATA[A practical look at supplier management: what it is and how to do it well]]></excerpt:encoded>
+		<wp:post_id>117</wp:post_id>
+		<wp:post_date><![CDATA[2026-07-21 09:00:00]]></wp:post_date>
+		<wp:post_date_gmt><![CDATA[2026-07-21 09:00:00]]></wp:post_date_gmt>
+		<wp:comment_status><![CDATA[open]]></wp:comment_status>
+		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
+		<wp:post_name><![CDATA[supplier-management-what-it-is-and-how-to-do-it-well]]></wp:post_name>
+		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type><![CDATA[post]]></wp:post_type>
+		<wp:is_sticky>0</wp:is_sticky>
+		<category domain="category" nicename="business-strategy"><![CDATA[Business Strategy]]></category>
+	</item>
+	<item>
+		<title><![CDATA[Strategic vs. tactical vs. operational planning, explained]]></title>
+		<link>https://example.com/strategic-vs-tactical-vs-operational-planning-explained/</link>
+		<pubDate>Sat, 18 Jul 2026 09:00:00 +0000</pubDate>
+		<dc:creator><![CDATA[leonardo-bueno]]></dc:creator>
+		<content:encoded><![CDATA[<!-- wp:paragraph -->
+<p><strong>Conteudo de demonstracao.</strong> Este texto existe para o tema ter o que exibir no ambiente de teste. Substitua pelo artigo real antes de publicar.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>This piece looks at strategic vs. tactical vs. operational planning, explained and what it changes for teams running a quality system day to day.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2>What the standard actually asks for</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Requirements are written to be auditable, not to be prescriptive. That gap is where most teams get stuck: the clause says what has to be demonstrable, and leaves the method to the organisation.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list -->
+<ul><li>Define the outcome before choosing the tool.</li><li>Keep the record proportional to the risk.</li><li>Review on a cadence someone actually owns.</li></ul>
+<!-- /wp:list -->
+
+<!-- wp:heading -->
+<h2>Where it breaks in practice</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>The failure is rarely the process on paper. It is the handover between the person who designed it and the people who run it every day.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:quote -->
+<blockquote class="wp-block-quote"><p>A process nobody owns is a process nobody runs.</p></blockquote>
+<!-- /wp:quote -->
+]]></content:encoded>
+		<excerpt:encoded><![CDATA[A practical look at strategic vs. tactical vs. operational planning, explained]]></excerpt:encoded>
+		<wp:post_id>118</wp:post_id>
+		<wp:post_date><![CDATA[2026-07-18 09:00:00]]></wp:post_date>
+		<wp:post_date_gmt><![CDATA[2026-07-18 09:00:00]]></wp:post_date_gmt>
+		<wp:comment_status><![CDATA[open]]></wp:comment_status>
+		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
+		<wp:post_name><![CDATA[strategic-vs-tactical-vs-operational-planning-explained]]></wp:post_name>
+		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type><![CDATA[post]]></wp:post_type>
+		<wp:is_sticky>0</wp:is_sticky>
+		<category domain="category" nicename="business-strategy"><![CDATA[Business Strategy]]></category>
+	</item>
+	<item>
+		<title><![CDATA[What a quality consultant actually does]]></title>
+		<link>https://example.com/what-a-quality-consultant-actually-does/</link>
+		<pubDate>Wed, 15 Jul 2026 09:00:00 +0000</pubDate>
+		<dc:creator><![CDATA[marcella-villas-boas]]></dc:creator>
+		<content:encoded><![CDATA[<!-- wp:paragraph -->
+<p><strong>Conteudo de demonstracao.</strong> Este texto existe para o tema ter o que exibir no ambiente de teste. Substitua pelo artigo real antes de publicar.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>This piece looks at what a quality consultant actually does and what it changes for teams running a quality system day to day.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2>What the standard actually asks for</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Requirements are written to be auditable, not to be prescriptive. That gap is where most teams get stuck: the clause says what has to be demonstrable, and leaves the method to the organisation.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list -->
+<ul><li>Define the outcome before choosing the tool.</li><li>Keep the record proportional to the risk.</li><li>Review on a cadence someone actually owns.</li></ul>
+<!-- /wp:list -->
+
+<!-- wp:heading -->
+<h2>Where it breaks in practice</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>The failure is rarely the process on paper. It is the handover between the person who designed it and the people who run it every day.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:quote -->
+<blockquote class="wp-block-quote"><p>A process nobody owns is a process nobody runs.</p></blockquote>
+<!-- /wp:quote -->
+]]></content:encoded>
+		<excerpt:encoded><![CDATA[A practical look at what a quality consultant actually does]]></excerpt:encoded>
+		<wp:post_id>119</wp:post_id>
+		<wp:post_date><![CDATA[2026-07-15 09:00:00]]></wp:post_date>
+		<wp:post_date_gmt><![CDATA[2026-07-15 09:00:00]]></wp:post_date_gmt>
+		<wp:comment_status><![CDATA[open]]></wp:comment_status>
+		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
+		<wp:post_name><![CDATA[what-a-quality-consultant-actually-does]]></wp:post_name>
+		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type><![CDATA[post]]></wp:post_type>
+		<wp:is_sticky>0</wp:is_sticky>
+		<category domain="category" nicename="business-strategy"><![CDATA[Business Strategy]]></category>
+	</item>
+	<item>
+		<title><![CDATA[Kaoru Ishikawa and the rise of company-wide quality control]]></title>
+		<link>https://example.com/kaoru-ishikawa-and-the-rise-of-company-wide-quality-control/</link>
+		<pubDate>Sun, 12 Jul 2026 09:00:00 +0000</pubDate>
+		<dc:creator><![CDATA[rodolfo-paludeto]]></dc:creator>
+		<content:encoded><![CDATA[<!-- wp:paragraph -->
+<p><strong>Conteudo de demonstracao.</strong> Este texto existe para o tema ter o que exibir no ambiente de teste. Substitua pelo artigo real antes de publicar.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>This piece looks at kaoru Ishikawa and the rise of company-wide quality control and what it changes for teams running a quality system day to day.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2>What the standard actually asks for</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Requirements are written to be auditable, not to be prescriptive. That gap is where most teams get stuck: the clause says what has to be demonstrable, and leaves the method to the organisation.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list -->
+<ul><li>Define the outcome before choosing the tool.</li><li>Keep the record proportional to the risk.</li><li>Review on a cadence someone actually owns.</li></ul>
+<!-- /wp:list -->
+
+<!-- wp:heading -->
+<h2>Where it breaks in practice</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>The failure is rarely the process on paper. It is the handover between the person who designed it and the people who run it every day.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:quote -->
+<blockquote class="wp-block-quote"><p>A process nobody owns is a process nobody runs.</p></blockquote>
+<!-- /wp:quote -->
+]]></content:encoded>
+		<excerpt:encoded><![CDATA[A practical look at kaoru Ishikawa and the rise of company-wide quality control]]></excerpt:encoded>
+		<wp:post_id>120</wp:post_id>
+		<wp:post_date><![CDATA[2026-07-12 09:00:00]]></wp:post_date>
+		<wp:post_date_gmt><![CDATA[2026-07-12 09:00:00]]></wp:post_date_gmt>
+		<wp:comment_status><![CDATA[open]]></wp:comment_status>
+		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
+		<wp:post_name><![CDATA[kaoru-ishikawa-and-the-rise-of-company-wide-quality-control]]></wp:post_name>
+		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type><![CDATA[post]]></wp:post_type>
+		<wp:is_sticky>0</wp:is_sticky>
+		<category domain="category" nicename="quality-gurus"><![CDATA[Quality Gurus]]></category>
+	</item>
+	<item>
+		<title><![CDATA[What is the PDCL cycle, and how do you implement it?]]></title>
+		<link>https://example.com/what-is-the-pdcl-cycle-and-how-do-you-implement-it/</link>
+		<pubDate>Thu, 09 Jul 2026 09:00:00 +0000</pubDate>
+		<dc:creator><![CDATA[davidson-ramos]]></dc:creator>
+		<content:encoded><![CDATA[<!-- wp:paragraph -->
+<p><strong>Conteudo de demonstracao.</strong> Este texto existe para o tema ter o que exibir no ambiente de teste. Substitua pelo artigo real antes de publicar.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>This piece looks at what is the PDCL cycle, and how do you implement it? and what it changes for teams running a quality system day to day.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2>What the standard actually asks for</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Requirements are written to be auditable, not to be prescriptive. That gap is where most teams get stuck: the clause says what has to be demonstrable, and leaves the method to the organisation.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list -->
+<ul><li>Define the outcome before choosing the tool.</li><li>Keep the record proportional to the risk.</li><li>Review on a cadence someone actually owns.</li></ul>
+<!-- /wp:list -->
+
+<!-- wp:heading -->
+<h2>Where it breaks in practice</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>The failure is rarely the process on paper. It is the handover between the person who designed it and the people who run it every day.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:quote -->
+<blockquote class="wp-block-quote"><p>A process nobody owns is a process nobody runs.</p></blockquote>
+<!-- /wp:quote -->
+]]></content:encoded>
+		<excerpt:encoded><![CDATA[A practical look at what is the PDCL cycle, and how do you implement it?]]></excerpt:encoded>
+		<wp:post_id>121</wp:post_id>
+		<wp:post_date><![CDATA[2026-07-09 09:00:00]]></wp:post_date>
+		<wp:post_date_gmt><![CDATA[2026-07-09 09:00:00]]></wp:post_date_gmt>
+		<wp:comment_status><![CDATA[open]]></wp:comment_status>
+		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
+		<wp:post_name><![CDATA[what-is-the-pdcl-cycle-and-how-do-you-implement-it]]></wp:post_name>
+		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type><![CDATA[post]]></wp:post_type>
+		<wp:is_sticky>0</wp:is_sticky>
+		<category domain="category" nicename="process-management"><![CDATA[Process Management]]></category>
+	</item>
+	<item>
+		<title><![CDATA[Why companies without process management are always firefighting]]></title>
+		<link>https://example.com/why-companies-without-process-management-are-always-firefighting/</link>
+		<pubDate>Mon, 06 Jul 2026 09:00:00 +0000</pubDate>
+		<dc:creator><![CDATA[fernanda-craveiro]]></dc:creator>
+		<content:encoded><![CDATA[<!-- wp:paragraph -->
+<p><strong>Conteudo de demonstracao.</strong> Este texto existe para o tema ter o que exibir no ambiente de teste. Substitua pelo artigo real antes de publicar.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>This piece looks at why companies without process management are always firefighting and what it changes for teams running a quality system day to day.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2>What the standard actually asks for</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Requirements are written to be auditable, not to be prescriptive. That gap is where most teams get stuck: the clause says what has to be demonstrable, and leaves the method to the organisation.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list -->
+<ul><li>Define the outcome before choosing the tool.</li><li>Keep the record proportional to the risk.</li><li>Review on a cadence someone actually owns.</li></ul>
+<!-- /wp:list -->
+
+<!-- wp:heading -->
+<h2>Where it breaks in practice</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>The failure is rarely the process on paper. It is the handover between the person who designed it and the people who run it every day.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:quote -->
+<blockquote class="wp-block-quote"><p>A process nobody owns is a process nobody runs.</p></blockquote>
+<!-- /wp:quote -->
+]]></content:encoded>
+		<excerpt:encoded><![CDATA[A practical look at why companies without process management are always firefighting]]></excerpt:encoded>
+		<wp:post_id>122</wp:post_id>
+		<wp:post_date><![CDATA[2026-07-06 09:00:00]]></wp:post_date>
+		<wp:post_date_gmt><![CDATA[2026-07-06 09:00:00]]></wp:post_date_gmt>
+		<wp:comment_status><![CDATA[open]]></wp:comment_status>
+		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
+		<wp:post_name><![CDATA[why-companies-without-process-management-are-always-firefighting]]></wp:post_name>
+		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type><![CDATA[post]]></wp:post_type>
+		<wp:is_sticky>0</wp:is_sticky>
+		<category domain="category" nicename="process-management"><![CDATA[Process Management]]></category>
+	</item>
+	<item>
+		<title><![CDATA[How to start process management in a small business]]></title>
+		<link>https://example.com/how-to-start-process-management-in-a-small-business/</link>
+		<pubDate>Fri, 03 Jul 2026 09:00:00 +0000</pubDate>
+		<dc:creator><![CDATA[jeison-arenhart]]></dc:creator>
+		<content:encoded><![CDATA[<!-- wp:paragraph -->
+<p><strong>Conteudo de demonstracao.</strong> Este texto existe para o tema ter o que exibir no ambiente de teste. Substitua pelo artigo real antes de publicar.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>This piece looks at how to start process management in a small business and what it changes for teams running a quality system day to day.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2>What the standard actually asks for</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Requirements are written to be auditable, not to be prescriptive. That gap is where most teams get stuck: the clause says what has to be demonstrable, and leaves the method to the organisation.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list -->
+<ul><li>Define the outcome before choosing the tool.</li><li>Keep the record proportional to the risk.</li><li>Review on a cadence someone actually owns.</li></ul>
+<!-- /wp:list -->
+
+<!-- wp:heading -->
+<h2>Where it breaks in practice</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>The failure is rarely the process on paper. It is the handover between the person who designed it and the people who run it every day.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:quote -->
+<blockquote class="wp-block-quote"><p>A process nobody owns is a process nobody runs.</p></blockquote>
+<!-- /wp:quote -->
+]]></content:encoded>
+		<excerpt:encoded><![CDATA[A practical look at how to start process management in a small business]]></excerpt:encoded>
+		<wp:post_id>123</wp:post_id>
+		<wp:post_date><![CDATA[2026-07-03 09:00:00]]></wp:post_date>
+		<wp:post_date_gmt><![CDATA[2026-07-03 09:00:00]]></wp:post_date_gmt>
+		<wp:comment_status><![CDATA[open]]></wp:comment_status>
+		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
+		<wp:post_name><![CDATA[how-to-start-process-management-in-a-small-business]]></wp:post_name>
+		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type><![CDATA[post]]></wp:post_type>
+		<wp:is_sticky>0</wp:is_sticky>
+		<category domain="category" nicename="process-management"><![CDATA[Process Management]]></category>
+	</item>
+	<item>
+		<title><![CDATA[What makes work well done — a definition of quality]]></title>
+		<link>https://example.com/what-makes-work-well-done-a-definition-of-quality/</link>
+		<pubDate>Tue, 30 Jun 2026 09:00:00 +0000</pubDate>
+		<dc:creator><![CDATA[juliana-geremias]]></dc:creator>
+		<content:encoded><![CDATA[<!-- wp:paragraph -->
+<p><strong>Conteudo de demonstracao.</strong> Este texto existe para o tema ter o que exibir no ambiente de teste. Substitua pelo artigo real antes de publicar.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>This piece looks at what makes work well done — a definition of quality and what it changes for teams running a quality system day to day.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2>What the standard actually asks for</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Requirements are written to be auditable, not to be prescriptive. That gap is where most teams get stuck: the clause says what has to be demonstrable, and leaves the method to the organisation.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list -->
+<ul><li>Define the outcome before choosing the tool.</li><li>Keep the record proportional to the risk.</li><li>Review on a cadence someone actually owns.</li></ul>
+<!-- /wp:list -->
+
+<!-- wp:heading -->
+<h2>Where it breaks in practice</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>The failure is rarely the process on paper. It is the handover between the person who designed it and the people who run it every day.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:quote -->
+<blockquote class="wp-block-quote"><p>A process nobody owns is a process nobody runs.</p></blockquote>
+<!-- /wp:quote -->
+]]></content:encoded>
+		<excerpt:encoded><![CDATA[A practical look at what makes work well done — a definition of quality]]></excerpt:encoded>
+		<wp:post_id>124</wp:post_id>
+		<wp:post_date><![CDATA[2026-06-30 09:00:00]]></wp:post_date>
+		<wp:post_date_gmt><![CDATA[2026-06-30 09:00:00]]></wp:post_date_gmt>
+		<wp:comment_status><![CDATA[open]]></wp:comment_status>
+		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
+		<wp:post_name><![CDATA[what-makes-work-well-done-a-definition-of-quality]]></wp:post_name>
+		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type><![CDATA[post]]></wp:post_type>
+		<wp:is_sticky>0</wp:is_sticky>
+		<category domain="category" nicename="philosophy-of-excellence"><![CDATA[Philosophy of Excellence]]></category>
+	</item>
+	<item>
+		<title><![CDATA[Purpose and high performance: driving results that last]]></title>
+		<link>https://example.com/purpose-and-high-performance-driving-results-that-last/</link>
+		<pubDate>Sat, 27 Jun 2026 09:00:00 +0000</pubDate>
+		<dc:creator><![CDATA[leonardo-bueno]]></dc:creator>
+		<content:encoded><![CDATA[<!-- wp:paragraph -->
+<p><strong>Conteudo de demonstracao.</strong> Este texto existe para o tema ter o que exibir no ambiente de teste. Substitua pelo artigo real antes de publicar.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>This piece looks at purpose and high performance: driving results that last and what it changes for teams running a quality system day to day.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2>What the standard actually asks for</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Requirements are written to be auditable, not to be prescriptive. That gap is where most teams get stuck: the clause says what has to be demonstrable, and leaves the method to the organisation.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list -->
+<ul><li>Define the outcome before choosing the tool.</li><li>Keep the record proportional to the risk.</li><li>Review on a cadence someone actually owns.</li></ul>
+<!-- /wp:list -->
+
+<!-- wp:heading -->
+<h2>Where it breaks in practice</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>The failure is rarely the process on paper. It is the handover between the person who designed it and the people who run it every day.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:quote -->
+<blockquote class="wp-block-quote"><p>A process nobody owns is a process nobody runs.</p></blockquote>
+<!-- /wp:quote -->
+]]></content:encoded>
+		<excerpt:encoded><![CDATA[A practical look at purpose and high performance: driving results that last]]></excerpt:encoded>
+		<wp:post_id>125</wp:post_id>
+		<wp:post_date><![CDATA[2026-06-27 09:00:00]]></wp:post_date>
+		<wp:post_date_gmt><![CDATA[2026-06-27 09:00:00]]></wp:post_date_gmt>
+		<wp:comment_status><![CDATA[open]]></wp:comment_status>
+		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
+		<wp:post_name><![CDATA[purpose-and-high-performance-driving-results-that-last]]></wp:post_name>
+		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type><![CDATA[post]]></wp:post_type>
+		<wp:is_sticky>0</wp:is_sticky>
+		<category domain="category" nicename="philosophy-of-excellence"><![CDATA[Philosophy of Excellence]]></category>
+	</item>
+	<item>
+		<title><![CDATA[The CEO's role in a culture of quality]]></title>
+		<link>https://example.com/the-ceo-s-role-in-a-culture-of-quality/</link>
+		<pubDate>Wed, 24 Jun 2026 09:00:00 +0000</pubDate>
+		<dc:creator><![CDATA[marcella-villas-boas]]></dc:creator>
+		<content:encoded><![CDATA[<!-- wp:paragraph -->
+<p><strong>Conteudo de demonstracao.</strong> Este texto existe para o tema ter o que exibir no ambiente de teste. Substitua pelo artigo real antes de publicar.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>This piece looks at the CEO&#x27;s role in a culture of quality and what it changes for teams running a quality system day to day.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2>What the standard actually asks for</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Requirements are written to be auditable, not to be prescriptive. That gap is where most teams get stuck: the clause says what has to be demonstrable, and leaves the method to the organisation.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list -->
+<ul><li>Define the outcome before choosing the tool.</li><li>Keep the record proportional to the risk.</li><li>Review on a cadence someone actually owns.</li></ul>
+<!-- /wp:list -->
+
+<!-- wp:heading -->
+<h2>Where it breaks in practice</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>The failure is rarely the process on paper. It is the handover between the person who designed it and the people who run it every day.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:quote -->
+<blockquote class="wp-block-quote"><p>A process nobody owns is a process nobody runs.</p></blockquote>
+<!-- /wp:quote -->
+]]></content:encoded>
+		<excerpt:encoded><![CDATA[A practical look at the CEO's role in a culture of quality]]></excerpt:encoded>
+		<wp:post_id>126</wp:post_id>
+		<wp:post_date><![CDATA[2026-06-24 09:00:00]]></wp:post_date>
+		<wp:post_date_gmt><![CDATA[2026-06-24 09:00:00]]></wp:post_date_gmt>
+		<wp:comment_status><![CDATA[open]]></wp:comment_status>
+		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
+		<wp:post_name><![CDATA[the-ceo-s-role-in-a-culture-of-quality]]></wp:post_name>
+		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type><![CDATA[post]]></wp:post_type>
+		<wp:is_sticky>0</wp:is_sticky>
+		<category domain="category" nicename="philosophy-of-excellence"><![CDATA[Philosophy of Excellence]]></category>
+	</item>
+</channel>
+</rss>
