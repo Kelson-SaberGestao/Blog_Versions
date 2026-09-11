@@ -741,10 +741,6 @@ Text Domain: quality-blog
    ========================================================================= */
 /* ---------- top utility bar: hexagon mark + links + search + Subscribe ---------- */
   .nav-brand { flex: none; display: flex; align-items: center; }
-.topic-heading::before {
-    content: ""; width: 9px; height: 9px; border-radius: 50%; flex: none;
-    background: var(--topic-color);
-  }
 /* ---------- post page ---------- */
   .post-wrap { padding-top: 34px; }
 .breadcrumb {
