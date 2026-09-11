@@ -7,3 +7,6 @@
 # Pacote gerado do tema — reconstruir com:
 #   cd themes && zip -r quality-blog.zip quality-blog
 themes/*.zip
+
+# Zips gerados por tools/build-themes.py
+dist/

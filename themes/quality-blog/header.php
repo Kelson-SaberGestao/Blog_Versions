@@ -60,16 +60,16 @@ if ( ! defined( 'ABSPATH' ) ) {
 					src="<?php echo esc_url( get_theme_file_uri( 'assets/img/logo-full.png' ) ); ?>"
 					alt="Qualiex" width="327" height="88" />
 				<span class="masthead-divider"></span>
-				<span class="masthead-wordmark"><span>Quality</span><b>Blog</b></span>
+				<span class="masthead-wordmark"><span><?php echo esc_html_x( 'Quality', 'primeira linha do lettering, menor', 'quality-blog' ); ?></span><b><?php echo esc_html_x( 'Blog', 'segunda linha do lettering, maior e em negrito', 'quality-blog' ); ?></b></span>
 			</a>
 
 			<?php if ( get_theme_mod( 'qb_banner_enabled', true ) ) : ?>
-				<a class="masthead-banner" href="<?php echo esc_url( get_theme_mod( 'qb_banner_url', '#' ) ); ?>">
+				<a class="masthead-banner" href="<?php echo esc_url( qb_mod( 'qb_banner_url' ) ); ?>">
 					<div class="mb-copy">
-						<span class="mb-badge"><?php echo esc_html( get_theme_mod( 'qb_banner_badge', 'Free guide' ) ); ?></span>
-						<h3><?php echo esc_html( get_theme_mod( 'qb_banner_title', 'New to ISO 9001?' ) ); ?></h3>
-						<span class="mb-sub"><?php echo esc_html( get_theme_mod( 'qb_banner_sub', 'The complete clause-by-clause guide - free, no signup walls.' ) ); ?></span>
-						<span class="mb-cta"><?php echo esc_html( get_theme_mod( 'qb_banner_cta', 'Get the complete guide' ) ); ?> &rarr;</span>
+						<span class="mb-badge"><?php echo esc_html( qb_mod( 'qb_banner_badge' ) ); ?></span>
+						<h3><?php echo esc_html( qb_mod( 'qb_banner_title' ) ); ?></h3>
+						<span class="mb-sub"><?php echo esc_html( qb_mod( 'qb_banner_sub' ) ); ?></span>
+						<span class="mb-cta"><?php echo esc_html( qb_mod( 'qb_banner_cta' ) ); ?> &rarr;</span>
 					</div>
 					<span class="mb-arrow" aria-hidden="true">&rarr;</span>
 				</a>

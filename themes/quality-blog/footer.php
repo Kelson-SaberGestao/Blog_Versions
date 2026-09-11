@@ -22,10 +22,10 @@ $qb_subscribe = get_theme_mod( 'qb_subscribe_url', '' );
 					src="<?php echo esc_url( get_theme_file_uri( 'assets/img/logo-full.png' ) ); ?>"
 					alt="Qualiex" width="327" height="88" />
 				<div class="brand-divider"></div>
-				<div class="brand-name"><span class="brand-thin">Quality</span><b>Blog</b></div>
+				<div class="brand-name"><span class="brand-thin"><?php echo esc_html_x( 'Quality', 'primeira linha do lettering, menor', 'quality-blog' ); ?></span><b><?php echo esc_html_x( 'Blog', 'segunda linha do lettering, maior e em negrito', 'quality-blog' ); ?></b></div>
 			</a>
 
-			<p><?php echo esc_html( get_theme_mod( 'qb_footer_text', get_bloginfo( 'description' ) ) ); ?></p>
+			<p><?php echo esc_html( qb_mod( 'qb_footer_text' ) ); ?></p>
 
 			<?php
 			$qb_social = array_filter(
@@ -114,7 +114,7 @@ $qb_subscribe = get_theme_mod( 'qb_subscribe_url', '' );
 		<div>
 			<h5><?php esc_html_e( 'Stay updated', 'quality-blog' ); ?></h5>
 			<p style="font-size:13px;color:var(--muted);margin:0 0 12px;">
-				<?php echo esc_html( get_theme_mod( 'qb_newsletter_text', __( 'One email a week, new articles and free resources.', 'quality-blog' ) ) ); ?>
+				<?php echo esc_html( qb_mod( 'qb_newsletter_text' ) ); ?>
 			</p>
 
 			<?php if ( $qb_subscribe ) : ?>

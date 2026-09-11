@@ -1,0 +1,326 @@
+# Quality Blog - modelo de traducao.
+# Gerado por tools/extract_strings.py
+msgid ""
+msgstr ""
+"Project-Id-Version: Quality Blog\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+
+#: themes/quality-blog/404.php:16
+msgid "Page not found"
+msgstr ""
+
+#: themes/quality-blog/404.php:18
+msgid "This page does not exist, or it has moved. Try a search, or head back to the homepage."
+msgstr ""
+
+#: themes/quality-blog/404.php:21
+msgid "Back to the homepage"
+msgstr ""
+
+#: themes/quality-blog/comments.php:28
+msgid "Comments"
+msgstr ""
+
+#: themes/quality-blog/comments.php:56 themes/quality-blog/index.php:58
+msgid "Previous"
+msgstr ""
+
+#: themes/quality-blog/comments.php:57 themes/quality-blog/index.php:59
+msgid "Next"
+msgstr ""
+
+#: themes/quality-blog/comments.php:64
+msgid "Comments are closed on this post."
+msgstr ""
+
+#: themes/quality-blog/comments.php:71
+msgid "Leave a comment"
+msgstr ""
+
+#: themes/quality-blog/comments.php:72
+msgid "Reply to %s"
+msgstr ""
+
+#: themes/quality-blog/comments.php:73
+msgid "Cancel"
+msgstr ""
+
+#: themes/quality-blog/comments.php:74
+msgid "Post comment"
+msgstr ""
+
+#: themes/quality-blog/comments.php:79
+msgid "Comment"
+msgstr ""
+
+#: themes/quality-blog/comments.php:80
+msgid "Share your experience…"
+msgstr ""
+
+#: themes/quality-blog/comments.php:87
+msgid "Your name"
+msgstr ""
+
+#: themes/quality-blog/comments.php:94 themes/quality-blog/footer.php:122
+msgid "Your email"
+msgstr ""
+
+#: themes/quality-blog/comments.php:32
+msgid "%s comment"
+msgid_plural "%s comments"
+msgstr[0] ""
+msgstr[1] ""
+
+#: themes/quality-blog/footer.php:53 themes/quality-blog/functions.php:317
+msgid "Categories"
+msgstr ""
+
+#: themes/quality-blog/footer.php:70
+msgid "Resources"
+msgstr ""
+
+#: themes/quality-blog/footer.php:91
+msgid "Software"
+msgstr ""
+
+#: themes/quality-blog/footer.php:107
+msgid "Qualiex for Quality"
+msgstr ""
+
+#: themes/quality-blog/footer.php:115
+msgid "Stay updated"
+msgstr ""
+
+#: themes/quality-blog/footer.php:124
+msgid "you@company.com"
+msgstr ""
+
+#: themes/quality-blog/footer.php:125 themes/quality-blog/header.php:44
+msgid "Subscribe"
+msgstr ""
+
+#: themes/quality-blog/footer.php:129
+msgid "Newsletter not connected yet — set the destination under Customize → Footer and social."
+msgstr ""
+
+#: themes/quality-blog/footer.php:141
+msgid "© %1$s %2$s. All rights reserved."
+msgstr ""
+
+#: themes/quality-blog/footer.php:163
+msgid "Privacy Policy"
+msgstr ""
+
+#: themes/quality-blog/footer.php:25 themes/quality-blog/header.php:63
+msgctxt "primeira linha do lettering, menor"
+msgid "Quality"
+msgstr ""
+
+#: themes/quality-blog/footer.php:25 themes/quality-blog/header.php:63
+msgctxt "segunda linha do lettering, maior e em negrito"
+msgid "Blog"
+msgstr ""
+
+#: themes/quality-blog/front-page.php:68
+msgid "Latest articles"
+msgstr ""
+
+#: themes/quality-blog/front-page.php:70 themes/quality-blog/front-page.php:128
+msgid "Browse all"
+msgstr ""
+
+#: themes/quality-blog/front-page.php:106
+msgid "Browse by topic"
+msgstr ""
+
+#: themes/quality-blog/functions.php:37
+msgid "Menu principal"
+msgstr ""
+
+#: themes/quality-blog/functions.php:38
+msgid "Menu mobile"
+msgstr ""
+
+#: themes/quality-blog/functions.php:39
+msgid "Rodape - coluna Resources"
+msgstr ""
+
+#: themes/quality-blog/functions.php:40
+msgid "Rodape - coluna Software"
+msgstr ""
+
+#: themes/quality-blog/functions.php:41
+msgid "Rodape - linha final (privacidade, cookies)"
+msgstr ""
+
+#: themes/quality-blog/functions.php:110
+msgid "Free guide"
+msgstr ""
+
+#: themes/quality-blog/functions.php:111
+msgid "New to ISO 9001?"
+msgstr ""
+
+#: themes/quality-blog/functions.php:112
+msgid "The complete clause-by-clause guide - free, no signup walls."
+msgstr ""
+
+#: themes/quality-blog/functions.php:113
+msgid "Get the complete guide"
+msgstr ""
+
+#: themes/quality-blog/functions.php:115
+msgid "Independent, practical writing on quality management, ISO 9001 and continuous improvement - published by the team behind Qualiex."
+msgstr ""
+
+#: themes/quality-blog/functions.php:116
+msgid "One email a week, new articles and free resources."
+msgstr ""
+
+#: themes/quality-blog/functions.php:356
+msgid "Banner do topo"
+msgstr ""
+
+#: themes/quality-blog/functions.php:358
+msgid "Bloco promocional ao lado da marca, na home."
+msgstr ""
+
+#: themes/quality-blog/functions.php:363
+msgid "Selo"
+msgstr ""
+
+#: themes/quality-blog/functions.php:364
+msgid "Titulo"
+msgstr ""
+
+#: themes/quality-blog/functions.php:365
+msgid "Linha de apoio (mobile)"
+msgstr ""
+
+#: themes/quality-blog/functions.php:366
+msgid "Texto do link"
+msgstr ""
+
+#: themes/quality-blog/functions.php:367
+msgid "Destino"
+msgstr ""
+
+#: themes/quality-blog/functions.php:384
+msgid "Mostrar o banner"
+msgstr ""
+
+#: themes/quality-blog/functions.php:392
+msgid "Rodape e redes"
+msgstr ""
+
+#: themes/quality-blog/functions.php:394
+msgid "Texto da marca, redes sociais e o botao Subscribe do topo."
+msgstr ""
+
+#: themes/quality-blog/functions.php:400
+msgid "Texto abaixo da marca"
+msgstr ""
+
+#: themes/quality-blog/functions.php:406
+msgid "Chamada da newsletter"
+msgstr ""
+
+#: themes/quality-blog/functions.php:412
+msgid "Destino do Subscribe / newsletter"
+msgstr ""
+
+#: themes/quality-blog/functions.php:417
+msgid "LinkedIn"
+msgstr ""
+
+#: themes/quality-blog/functions.php:418
+msgid "Instagram"
+msgstr ""
+
+#: themes/quality-blog/functions.php:419
+msgid "YouTube"
+msgstr ""
+
+#: themes/quality-blog/functions.php:466
+msgid "%s ago"
+msgstr ""
+
+#: themes/quality-blog/functions.php:474
+msgid "Your comment is awaiting moderation."
+msgstr ""
+
+#: themes/quality-blog/functions.php:486
+msgid "Reply"
+msgstr ""
+
+#: themes/quality-blog/header.php:22
+msgid "Skip to content"
+msgstr ""
+
+#: themes/quality-blog/header.php:47
+msgid "Open menu"
+msgstr ""
+
+#: themes/quality-blog/header.php:83
+msgid "Mobile menu"
+msgstr ""
+
+#: themes/quality-blog/header.php:91
+msgid "Close menu"
+msgstr ""
+
+#: themes/quality-blog/header.php:99 themes/quality-blog/searchform.php:16
+msgid "Search"
+msgstr ""
+
+#: themes/quality-blog/header.php:101 themes/quality-blog/searchform.php:18
+msgid "Search articles, tools, guides…"
+msgstr ""
+
+#: themes/quality-blog/index.php:23
+msgid "Results for \"%s\""
+msgstr ""
+
+#: themes/quality-blog/index.php:31
+msgid "All blog posts"
+msgstr ""
+
+#: themes/quality-blog/index.php:65
+msgid "No posts found. Try a different search term."
+msgstr ""
+
+#: themes/quality-blog/single.php:23
+msgid "Breadcrumb"
+msgstr ""
+
+#: themes/quality-blog/single.php:24
+msgid "Home"
+msgstr ""
+
+#: themes/quality-blog/single.php:52
+msgid "Published %1$s &middot; %2$d min read"
+msgstr ""
+
+#: themes/quality-blog/single.php:61
+msgid "Copy link"
+msgstr ""
+
+#: themes/quality-blog/single.php:63
+msgid "Link copied!"
+msgstr ""
+
+#: themes/quality-blog/single.php:68
+msgid "Share on LinkedIn"
+msgstr ""
+
+#: themes/quality-blog/single.php:120
+msgid "Related articles"
+msgstr ""
+
+#: themes/quality-blog/template-parts/card.php:33
+msgid "%d min read"
+msgstr ""

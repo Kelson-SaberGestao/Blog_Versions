@@ -16,6 +16,9 @@ define( 'QB_VERSION', '0.1.0' );
  * ---------------------------------------------------------------------- */
 
 function qb_setup() {
+	// Sem isto o WordPress nem procura os arquivos de traducao.
+	load_theme_textdomain( 'quality-blog', get_template_directory() . '/languages' );
+
 	add_theme_support( 'title-tag' );
 	add_theme_support( 'post-thumbnails' );
 	add_theme_support( 'automatic-feed-links' );
@@ -93,6 +96,34 @@ function qb_topic_color( $term ) {
 	$slug   = is_object( $term ) ? $term->slug : (string) $term;
 
 	return isset( $colors[ $slug ] ) ? $colors[ $slug ] : '#0544AB';
+}
+
+/**
+ * Textos padrao do banner e do rodape.
+ *
+ * Ficam aqui e em nenhum outro lugar: antes estavam duplicados entre o
+ * Customizer e os templates, e so a copia do Customizer era traduzivel - o
+ * que fazia o banner sair em ingles na build em espanhol.
+ */
+function qb_default( $key ) {
+	$defaults = array(
+		'qb_banner_badge'    => __( 'Free guide', 'quality-blog' ),
+		'qb_banner_title'    => __( 'New to ISO 9001?', 'quality-blog' ),
+		'qb_banner_sub'      => __( 'The complete clause-by-clause guide - free, no signup walls.', 'quality-blog' ),
+		'qb_banner_cta'      => __( 'Get the complete guide', 'quality-blog' ),
+		'qb_banner_url'      => '#',
+		'qb_footer_text'     => __( 'Independent, practical writing on quality management, ISO 9001 and continuous improvement - published by the team behind Qualiex.', 'quality-blog' ),
+		'qb_newsletter_text' => __( 'One email a week, new articles and free resources.', 'quality-blog' ),
+	);
+
+	return isset( $defaults[ $key ] ) ? $defaults[ $key ] : '';
+}
+
+/**
+ * Valor configurado, ou o padrao traduzido.
+ */
+function qb_mod( $key ) {
+	return get_theme_mod( $key, qb_default( $key ) );
 }
 
 /* -------------------------------------------------------------------------
@@ -329,10 +360,10 @@ function qb_customize( $wp_customize ) {
 	);
 
 	$fields = array(
-		'qb_banner_badge' => array( __( 'Selo', 'quality-blog' ), 'Free guide' ),
-		'qb_banner_title' => array( __( 'Titulo', 'quality-blog' ), 'New to ISO 9001?' ),
-		'qb_banner_sub'   => array( __( 'Linha de apoio (mobile)', 'quality-blog' ), 'The complete clause-by-clause guide - free, no signup walls.' ),
-		'qb_banner_cta'   => array( __( 'Texto do link', 'quality-blog' ), 'Get the complete guide' ),
+		'qb_banner_badge' => array( __( 'Selo', 'quality-blog' ), qb_default( 'qb_banner_badge' ) ),
+		'qb_banner_title' => array( __( 'Titulo', 'quality-blog' ), qb_default( 'qb_banner_title' ) ),
+		'qb_banner_sub'   => array( __( 'Linha de apoio (mobile)', 'quality-blog' ), qb_default( 'qb_banner_sub' ) ),
+		'qb_banner_cta'   => array( __( 'Texto do link', 'quality-blog' ), qb_default( 'qb_banner_cta' ) ),
 		'qb_banner_url'   => array( __( 'Destino', 'quality-blog' ), '#' ),
 	);
 
@@ -367,13 +398,13 @@ function qb_customize( $wp_customize ) {
 	$footer_fields = array(
 		'qb_footer_text' => array(
 			__( 'Texto abaixo da marca', 'quality-blog' ),
-			'Independent, practical writing on quality management, ISO 9001 and continuous improvement - published by the team behind Qualiex.',
+			qb_default( 'qb_footer_text' ),
 			'sanitize_textarea_field',
 			'textarea',
 		),
 		'qb_newsletter_text' => array(
 			__( 'Chamada da newsletter', 'quality-blog' ),
-			'One email a week, new articles and free resources.',
+			qb_default( 'qb_newsletter_text' ),
 			'sanitize_text_field',
 			'text',
 		),
