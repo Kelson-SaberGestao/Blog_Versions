@@ -11,6 +11,19 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 define( 'QB_VERSION', '0.1.0' );
 
+/**
+ * Versao usada no ?ver= do CSS e do JS.
+ *
+ * Usa a data de modificacao do arquivo, nao QB_VERSION. Com um numero fixo, o
+ * navegador continua servindo o CSS antigo depois de instalar um tema novo -
+ * e a pessoa jura que a atualizacao nao pegou.
+ */
+function qb_asset_version( $relative ) {
+	$path = get_theme_file_path( $relative );
+
+	return file_exists( $path ) ? (string) filemtime( $path ) : QB_VERSION;
+}
+
 /* -------------------------------------------------------------------------
  * Suporte do tema
  * ---------------------------------------------------------------------- */
@@ -56,9 +69,9 @@ function qb_assets() {
 		null
 	);
 
-	wp_enqueue_style( 'qb-style', get_stylesheet_uri(), array( 'qb-fonts' ), QB_VERSION );
+	wp_enqueue_style( 'qb-style', get_stylesheet_uri(), array( 'qb-fonts' ), qb_asset_version( 'style.css' ) );
 
-	wp_enqueue_script( 'qb-main', get_theme_file_uri( 'assets/js/main.js' ), array(), QB_VERSION, true );
+	wp_enqueue_script( 'qb-main', get_theme_file_uri( 'assets/js/main.js' ), array(), qb_asset_version( 'assets/js/main.js' ), true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
