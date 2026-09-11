@@ -72,7 +72,11 @@ Text Domain: quality-blog
   .nav-actions .header-search-lg {
     grid-area: unset; justify-self: unset; width: 215px; max-width: 100%;
     padding: 9px 16px;
+    transition: width .18s ease;
   }
+  /* Sem o botao Subscribe sobra espaco na barra: a busca ocupa ele. Navegador
+     que nao entenda :has() simplesmente mantem os 215px. */
+  .nav-actions:not(:has(.subscribe-btn)) .header-search-lg { width: 340px; }
   .subscribe-btn {
     font-family: var(--font-ui); font-weight: 800; font-size: 14px;
     background: var(--blue-700); color: #fff;
