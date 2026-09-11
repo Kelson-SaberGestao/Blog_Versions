@@ -87,6 +87,17 @@ function qb_topic_colors() {
 			'quality-gurus'              => '#1E3A8A',
 			'process-management'         => '#0369A1',
 			'philosophy-of-excellence'   => '#B91C1C',
+
+			// Espanhol: mesmas cores, para o par visual sobreviver a traducao.
+			'sistemas-de-gestion-de-calidad' => '#0544AB',
+			'herramientas-de-calidad'        => '#0E8F8F',
+			'mejora-continua'                => '#16A34A',
+			'cultura-organizacional'         => '#C026A3',
+			'gestion-de-proyectos'           => '#7C3AED',
+			'estrategia-de-negocio'          => '#D4841A',
+			'gurus-de-la-calidad'            => '#1E3A8A',
+			'gestion-de-procesos'            => '#0369A1',
+			'filosofia-de-la-excelencia'     => '#B91C1C',
 		)
 	);
 }
@@ -95,7 +106,19 @@ function qb_topic_color( $term ) {
 	$colors = qb_topic_colors();
 	$slug   = is_object( $term ) ? $term->slug : (string) $term;
 
-	return isset( $colors[ $slug ] ) ? $colors[ $slug ] : '#0544AB';
+	if ( isset( $colors[ $slug ] ) ) {
+		return $colors[ $slug ];
+	}
+
+	/*
+	 * Categoria fora do mapa - renomeada, nova, ou num idioma que ninguem
+	 * cadastrou aqui. Em vez de devolver sempre o mesmo azul, e transformar
+	 * os blocos por tema num bloco monocromatico so, escolhe uma cor da
+	 * propria paleta de forma estavel: o mesmo slug sempre recebe a mesma cor.
+	 */
+	$palette = array_values( array_unique( $colors ) );
+
+	return $palette[ abs( crc32( $slug ) ) % count( $palette ) ];
 }
 
 /**
