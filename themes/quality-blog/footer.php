@@ -111,25 +111,29 @@ $qb_subscribe = get_theme_mod( 'qb_subscribe_url', '' );
 			</ul>
 		</div>
 
-		<div>
-			<h5><?php esc_html_e( 'Stay updated', 'quality-blog' ); ?></h5>
-			<p style="font-size:13px;color:var(--muted);margin:0 0 12px;">
-				<?php echo esc_html( qb_mod( 'qb_newsletter_text' ) ); ?>
-			</p>
+		<?php
+		/*
+		 * A coluna so existe se houver para onde inscrever. Antes ela ficava
+		 * sempre, e sem destino mostrava um aviso escrito para o administrador
+		 * - que o visitante lia. Instrucao interna nao vai para a pagina.
+		 * Para tirar a coluna, limpe o campo em Personalizar > Rodape e redes.
+		 */
+		?>
+		<?php if ( $qb_subscribe ) : ?>
+			<div class="foot-updates">
+				<h5><?php esc_html_e( 'Stay updated', 'quality-blog' ); ?></h5>
+				<p style="font-size:13px;color:var(--muted);margin:0 0 12px;">
+					<?php echo esc_html( qb_mod( 'qb_newsletter_text' ) ); ?>
+				</p>
 
-			<?php if ( $qb_subscribe ) : ?>
 				<form class="foot-newsletter" action="<?php echo esc_url( $qb_subscribe ); ?>" method="get" target="_blank">
 					<label class="screen-reader-text" for="qb-foot-email"><?php esc_html_e( 'Your email', 'quality-blog' ); ?></label>
 					<input type="email" id="qb-foot-email" name="email" required
 						placeholder="<?php esc_attr_e( 'you@company.com', 'quality-blog' ); ?>" />
 					<button type="submit"><?php esc_html_e( 'Subscribe', 'quality-blog' ); ?></button>
 				</form>
-			<?php else : ?>
-				<p class="foot-newsletter-todo">
-					<?php esc_html_e( 'Newsletter not connected yet — set the destination under Customize → Footer and social.', 'quality-blog' ); ?>
-				</p>
-			<?php endif; ?>
-		</div>
+			</div>
+		<?php endif; ?>
 
 	</div>
 

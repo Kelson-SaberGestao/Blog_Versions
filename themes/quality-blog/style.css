@@ -1029,7 +1029,9 @@ Text Domain: quality-blog
   transition: background .15s ease;
 }
 .foot-newsletter button:hover { background: var(--blue-600); }
-.foot-newsletter-todo { font-size: 12.5px; color: var(--muted); margin: 0; font-style: italic; }
+/* Sem a coluna de newsletter o rodape vira quatro colunas, em vez de deixar
+   um vao aberto na direita. */
+.foot-grid:not(:has(.foot-updates)) { grid-template-columns: 1.4fr 1fr 1fr 1fr; }
 
 .foot-legal { display: flex; flex-wrap: wrap; gap: 6px 14px; align-items: center; }
 .foot-legal li { list-style: none; }
