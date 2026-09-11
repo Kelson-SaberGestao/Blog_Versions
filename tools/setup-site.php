@@ -8,10 +8,6 @@
  *
  * Uso:
  *   WP_PUBLIC=/caminho/para/o/wordpress php tools/setup-site.php
- *
- * No Local, o MySQL escuta num socket e a conexao por linha de comando falha
- * com "Error establishing a database connection". Nesse caso passe tambem:
- *   DB_SOCKET=~/Library/Application\ Support/Local/run/<id>/mysql/mysqld.sock
  */
 
 $public = getenv( 'WP_PUBLIC' );
@@ -21,9 +17,6 @@ if ( ! $public || ! file_exists( $public . '/wp-load.php' ) ) {
 }
 
 define( 'WP_USE_THEMES', false );
-if ( getenv( 'DB_SOCKET' ) ) {
-	define( 'DB_HOST', 'localhost:' . getenv( 'DB_SOCKET' ) );
-}
 require $public . '/wp-load.php';
 
 switch_theme( 'quality-blog' );

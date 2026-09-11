@@ -1,67 +1,75 @@
 # tools/
 
-Scripts de uma vez só, para preparar uma instalação nova do WordPress com o
-tema Quality Blog. Não fazem parte do tema — não vão no zip.
+Scripts de uma vez só, para preparar uma instalação do WordPress com o tema.
+Não fazem parte do tema — não vão dentro do zip.
 
 ## Por que existem
 
 Tema é código e viaja no zip. **Menu, categorias e configurações são conteúdo
-e ficam no banco** — não viajam. Instalar o tema num servidor novo dá um
-cabeçalho vazio até alguém montar o menu. Estes scripts fazem isso em segundos,
-igual em toda instalação, sem depender de ninguém lembrar da sequência de cliques.
+e ficam no banco** — não viajam. Instalar o tema num WordPress novo dá um
+cabeçalho e um rodapé vazios até alguém montar os menus. Estes scripts fazem
+isso em segundos, igual em toda instalação.
 
-## Como rodar
+## No Local (máquina de teste)
 
-Precisa do PHP. Se não tiver no sistema, use o que vem com o Local:
-
-```bash
-PHP="$HOME/Library/Application Support/Local/lightning-services/php-8.2.29+0/bin/darwin-arm64/bin/php"
-```
-
-Depois, apontando para a pasta do WordPress:
+Com o site **rodando** no Local:
 
 ```bash
-WP_PUBLIC="$HOME/Local Sites/quality-blog/app/public" "$PHP" tools/setup-site.php
-WP_PUBLIC="$HOME/Local Sites/quality-blog/app/public" "$PHP" tools/setup-menu.php
+./tools/local.sh setup-site
+./tools/local.sh setup-menu
 ```
 
-**No Local**, o MySQL escuta num socket e a conexão por linha de comando falha
-com *"Error establishing a database connection"*. Descubra o socket e passe junto:
+Para o site em espanhol:
 
 ```bash
-find ~/Library/Application\ Support/Local/run -name "mysqld.sock"
+./tools/local.sh setup-menu es
 ```
+
+O `local.sh` descobre sozinho o PHP do Local, a pasta do site e o socket do
+MySQL. Se você tiver mais de um site no Local, passe o nome:
 
 ```bash
-WP_PUBLIC="..." DB_SOCKET="/caminho/para/mysqld.sock" "$PHP" tools/setup-site.php
+./tools/local.sh setup-site nome-do-site
 ```
 
-Num servidor de verdade (produção ou staging), o `DB_SOCKET` não é necessário.
+## Num servidor de verdade
+
+Precisa de acesso a terminal na máquina. Se a TI não der, dá para fazer tudo
+pelo painel — é mais demorado, mas são as mesmas ações.
+
+```bash
+WP_PUBLIC=/caminho/do/wordpress php tools/setup-site.php
+WP_PUBLIC=/caminho/do/wordpress php tools/setup-menu.php
+LANG=es WP_PUBLIC=/caminho/do/wordpress php tools/setup-menu.php
+```
 
 ## O que cada um faz
 
 | Script | O que faz |
 |---|---|
-| `setup-site.php` | Ativa o tema, define links permanentes como `/%postname%/`, aponta a home para os posts recentes, liga moderação manual de comentários |
-| `setup-menu.php` | Cria o menu principal com Software for Quality (12), Categories (as categorias reais), Free Assets (3) e Quality Assistant; atribui a `primary` e `mobile` |
+| `setup-site.php` | Ativa o tema, links permanentes `/%postname%/`, home nos posts recentes, moderação manual de comentários |
+| `setup-menu.php` | Menu principal (Software, Categories, Free Assets, Quality Assistant) e as três colunas do rodapé; atribui a todos os locais do tema |
+| `build-themes.py` | Gera os dois zips em `dist/`, a partir de `themes/quality-blog/` |
+| `extract_strings.py` | Atualiza `languages/quality-blog.pot` com as strings traduzíveis |
+| `local.sh` | Atalho para rodar os dois primeiros num site do Local |
 
-Os dois são idempotentes — rodar de novo não duplica nada. O `setup-menu.php`
-apaga e recria o menu, então **edições feitas à mão no painel se perdem** se
-você rodar de novo.
-
-## Conteúdo de demonstração
-
-O arquivo `themes/quality-blog-demo-content.xml` traz 27 posts, 9 categorias e
-7 autores do protótipo, para uma instalação nova não ficar vazia. Importe por
-**Ferramentas → Importar → WordPress**.
-
-O corpo dos posts é texto de preenchimento, com aviso no primeiro parágrafo.
-**Não use em produção** — é só para ver o tema com conteúdo.
+**Atenção:** `setup-menu.php` apaga e recria os menus. Edições feitas à mão no
+painel se perdem se você rodar de novo.
 
 ## Ordem numa instalação nova
 
 1. Instalar e ativar o tema (`Aparência → Temas → Adicionar → Enviar tema`)
 2. `setup-site.php`
-3. Importar o conteúdo (real, ou o demo se for teste)
-4. `setup-menu.php` — depois das categorias existirem, senão o dropdown sai vazio
-5. Ajustar no painel: menus do rodapé, redes sociais, destino do Subscribe
+3. Criar as categorias, ou importar o conteúdo
+4. `setup-menu.php` — **depois** das categorias, senão o dropdown nasce vazio
+5. Personalizar → Rodapé e redes: endereços das redes e destino do Subscribe
+6. Aparência → Menus: trocar os `#` pelas URLs reais
+
+## Conteúdo de demonstração
+
+`themes/quality-blog-demo-content.xml` traz 27 posts, 9 categorias e 7 autores
+do protótipo, para uma instalação de teste não ficar vazia. Importe por
+**Ferramentas → Importar → WordPress**.
+
+O corpo dos posts é texto de preenchimento, com aviso no primeiro parágrafo.
+**Não use em produção.**

@@ -10,8 +10,6 @@
  *   WP_PUBLIC=/caminho/do/wordpress php tools/setup-menu.php          (ingles)
  *   WP_PUBLIC=/caminho/do/wordpress LANG=es php tools/setup-menu.php  (espanhol)
  *
- * No Local o MySQL escuta num socket; passe tambem DB_SOCKET=/.../mysqld.sock
- *
  * As URLs ficam em "#" ate alguem preencher os enderecos reais em
  * Aparencia > Menus. O dropdown Categories aponta para as categorias que
  * existirem no momento em que o script roda - por isso rode-o depois de
@@ -25,9 +23,6 @@ if ( ! $public || ! file_exists( $public . '/wp-load.php' ) ) {
 }
 
 define( 'WP_USE_THEMES', false );
-if ( getenv( 'DB_SOCKET' ) ) {
-	define( 'DB_HOST', 'localhost:' . getenv( 'DB_SOCKET' ) );
-}
 require $public . '/wp-load.php';
 
 $lang = 'es' === strtolower( (string) getenv( 'LANG' ) ) ? 'es' : 'en';
